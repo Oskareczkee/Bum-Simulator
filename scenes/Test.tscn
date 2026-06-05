@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc7u533fij8o0"]
+
+[ext_resource type="PackedScene" uid="uid://duh7c4eaix7xs" path="res://scenes/entities/TrashCan.tscn" id="1_w8un3"]
+[ext_resource type="PackedScene" uid="uid://8uk3vynv4btf" path="res://scenes/entities/Player.tscn" id="1_wen4y"]
+
+[node name="Root" type="Node2D" unique_id=1789326611]
+
+[node name="SCENE" type="Node2D" parent="." unique_id=215247840]
+
+[node name="Player" parent="SCENE" unique_id=1194532292 instance=ExtResource("1_wen4y")]
+position = Vector2(-30, 1)
+
+[node name="TrashCan" parent="SCENE" unique_id=649197142 instance=ExtResource("1_w8un3")]
+position = Vector2(87, -27)

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dnjkyi8o73ykv"]
+
+[ext_resource type="Script" uid="uid://b65tdc5lnrglw" path="res://InteractingComponent.cs" id="1_j41if"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2574u"]
+radius = 8.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_1fsor"]
+font_size = 8
+
+[node name="InteractingComponent" type="Node2D" unique_id=1065531858]
+script = ExtResource("1_j41if")
+
+[node name="InteractRange" type="Area2D" parent="." unique_id=979798512]
+z_index = 999
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange" unique_id=1651241630]
+shape = SubResource("CircleShape2D_2574u")
+
+[node name="InteractLabel" type="Label" parent="." unique_id=436125570]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -31.0
+offset_right = 31.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Interaction Text"
+label_settings = SubResource("LabelSettings_1fsor")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="InteractRange" to="." method="OnAreaEntered"]
+[connection signal="area_exited" from="InteractRange" to="." method="OnAreaExited"]

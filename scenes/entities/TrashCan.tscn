@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://duh7c4eaix7xs"]
+
+[ext_resource type="Script" uid="uid://2oybgwu2v5ks" path="res://scenes/entities/TrashCanScript.cs" id="1_lyytp"]
+[ext_resource type="Texture2D" uid="uid://5k1er7uny8hq" path="res://assets/sprites/props/trash-can.png" id="1_v2uck"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="2_lyytp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hsp8r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r3o88"]
+radius = 113.004425
+
+[node name="TrashCan" type="StaticBody2D" unique_id=1107737104]
+script = ExtResource("1_lyytp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1917555805]
+shape = SubResource("CircleShape2D_hsp8r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=108651787]
+texture = ExtResource("1_v2uck")
+hframes = 2
+frame = 1
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("2_lyytp")]
+InteractName = "Open (E) Trash Can"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=780607662]
+position = Vector2(2, 0)
+shape = SubResource("CircleShape2D_r3o88")

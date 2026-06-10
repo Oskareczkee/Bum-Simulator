@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://blk3vtixa62t7"]
+
+[ext_resource type="Script" uid="uid://cq1w6bqa2nkh8" path="res://scenes/entities/NPCs/TestNPC/TestNpc.cs" id="1_gdkow"]
+[ext_resource type="Texture2D" uid="uid://daank31l7ibpe" path="res://scenes/entities/NPCs/TestNPC/Warrior_Idle.png" id="2_uv5q1"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_fxxf3"]
+[ext_resource type="AudioStream" uid="uid://b4n1rslxobnpo" path="res://scenes/entities/NPCs/TestNPC/TestSound.mp3" id="4_6oj3s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_53gfc"]
+radius = 53.600372
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmcgl"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igu3x"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u8c8"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t10ic"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih0km"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74ksa"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqlas"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la45j"]
+atlas = ExtResource("2_uv5q1")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d01wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmcgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igu3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6u8c8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t10ic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih0km")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74ksa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqlas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_la45j")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qavoi"]
+radius = 115.62439
+
+[node name="TestNpc" type="StaticBody2D" unique_id=362253245]
+script = ExtResource("1_gdkow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47981438]
+shape = SubResource("CircleShape2D_53gfc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=647324468]
+sprite_frames = SubResource("SpriteFrames_d01wx")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.39636037
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("3_fxxf3")]
+InteractName = "Talk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1870017555]
+position = Vector2(3, -1)
+shape = SubResource("CircleShape2D_qavoi")
+
+[node name="DialogueStream" type="AudioStreamPlayer2D" parent="." unique_id=230653953]
+stream = ExtResource("4_6oj3s")
+volume_db = -5.0
+max_distance = 400.0
+attenuation = 3.0

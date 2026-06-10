@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfkfccktham5r"
-path="res://.godot/imported/Heal.png-c93363dfb98da7db517a6b090d86711f.ctex"
+uid="uid://xsu1a3fjnkyo"
+path="res://.godot/imported/Clouds_03.png-659c596421e5a03896858a5a74909b26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Main Character/Heal.png"
-dest_files=["res://.godot/imported/Heal.png-c93363dfb98da7db517a6b090d86711f.ctex"]
+source_file="res://assets/sprites/props/clouds/Clouds_03.png"
+dest_files=["res://.godot/imported/Clouds_03.png-659c596421e5a03896858a5a74909b26.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://duh7c4eaix7xs"]
 
-[ext_resource type="Script" uid="uid://2oybgwu2v5ks" path="res://scenes/entities/TrashCanScript.cs" id="1_lyytp"]
-[ext_resource type="Texture2D" uid="uid://5k1er7uny8hq" path="res://assets/sprites/props/trash-can.png" id="1_v2uck"]
+[ext_resource type="Script" uid="uid://2oybgwu2v5ks" path="res://scenes/entities/Props/TrashCan/TrashCanScript.cs" id="1_lyytp"]
+[ext_resource type="Texture2D" uid="uid://5k1er7uny8hq" path="res://scenes/entities/Props/TrashCan/trash-can.png" id="1_v2uck"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="2_lyytp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hsp8r"]

@@ -4,22 +4,38 @@ using static Godot.WebSocketPeer;
 
 public enum PlayerState { IDLE, RUN };
 
-public partial class PlayerScriptcs : CharacterBody2D
+public partial class PlayerScript : CharacterBody2D
 {
+	[Signal] public delegate void UpdateIntoxicationBarEventHandler(int percent_value);
+	[Signal] public delegate void GameOverEventHandler();
+
 	[Export] public float Speed = 300.0f;
 
-	private AnimatedSprite2D _sprite;
+    private Hud HUD;
+
+    public double intoxicationLossPerMinute = 40.0f;
+    public double maxIntoxication = 400.0f;
+    public double intoxication = 400.0f;
+
+    private AnimatedSprite2D _sprite;
 	private PlayerState _state = PlayerState.IDLE;
 	public override void _Ready()
 	{
 		_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-	}
+        HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
+        intoxication = maxIntoxication;
+
+		UpdateIntoxicationBar += HUD.UpdateIntoxicationBar;
+        GameOver += DisplayGameOver;
+    }
 
 	public override void _PhysicsProcess(double delta)
 	{
 		MovementLoop();
 		AnimationLoop();
 		UpdateAnimation();
+
+		UpdateIntoxication(delta);
 	}
 
 	private void MovementLoop()
@@ -69,4 +85,28 @@ public partial class PlayerScriptcs : CharacterBody2D
 				break;
 		}
 	}
+
+	private void Death()
+	{
+        EmitSignal(SignalName.GameOver);
+    }
+
+	private void UpdateIntoxication(double delta)
+	{
+		if (intoxication == 0) return; //prevent calling this too much after emitting signal
+
+		intoxication -= (intoxicationLossPerMinute / 60.0d) * delta;
+		if(intoxication < 0) intoxication = 0;
+
+		EmitSignal(SignalName.UpdateIntoxicationBar, (intoxication * 100) / maxIntoxication);
+
+		if (intoxication == 0)
+			Death();
+	}
+
+	private void DisplayGameOver()
+	{
+        GameManager gameManager = GetNode("/root/GameManager") as GameManager;
+        gameManager.GameOver();
+    }
 }

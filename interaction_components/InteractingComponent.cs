@@ -16,9 +16,8 @@ public partial class InteractingComponent : Node2D
 
     public override void _Input(InputEvent @event)
     {
-        if(@event.IsActionPressed("interact") && CanInteract && CurrentInteractions.Any())
+        if(@event.IsActionPressed("interact") && CanInteract && CurrentInteractions.Count != 0)
 		{
-			CanInteract = false;
 			InteractLabel.Hide();
 
 			var CurrentInteraction = CurrentInteractions.First() as Interactable;

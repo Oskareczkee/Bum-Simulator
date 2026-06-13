@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://6rralnnr3wx7"]
+
+[ext_resource type="Script" uid="uid://dagoo75tuik4r" path="res://scenes/ui/game over/GameOver.cs" id="1_3nrs7"]
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="1_cvy6m"]
+[ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="2_vbde8"]
+[ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="3_dn52v"]
+[ext_resource type="Texture2D" uid="uid://dewmswvc3dkad" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Hover.png" id="4_rlqfe"]
+
+[node name="EndGameScreen" type="Control" unique_id=343900209]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3nrs7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=279444293]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0.10600001, 0.030000009, 0.043137256)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1888959187]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 150
+alignment = 1
+
+[node name="Result" type="Label" parent="VBoxContainer" unique_id=394399324]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_cvy6m")
+theme_override_font_sizes/font_size = 164
+text = "Wytrzeźwiałeś"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=707050928]
+layout_mode = 2
+alignment = 1
+
+[node name="Replay" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1123243283]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_vbde8")
+texture_pressed = ExtResource("3_dn52v")
+texture_hover = ExtResource("4_rlqfe")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Replay" unique_id=2120310747]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_cvy6m")
+theme_override_font_sizes/font_size = 50
+text = "Jeszcze raz"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main Menu" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1961654512]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_vbde8")
+texture_pressed = ExtResource("3_dn52v")
+texture_hover = ExtResource("4_rlqfe")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Main Menu" unique_id=366773705]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_cvy6m")
+theme_override_font_sizes/font_size = 50
+text = "Menu Główne"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quit" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1465070200]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_vbde8")
+texture_pressed = ExtResource("3_dn52v")
+texture_hover = ExtResource("4_rlqfe")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Quit" unique_id=1035376542]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_cvy6m")
+theme_override_font_sizes/font_size = 50
+text = "Pierdole to"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Main Menu" to="." method="OnMainMenuPressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Quit" to="." method="OnQuitPressed"]

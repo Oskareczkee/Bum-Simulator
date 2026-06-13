@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://c7f88wb67ieul"]
+
+[ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="1_88lc1"]
+[ext_resource type="Script" uid="uid://dbtxadxrf4mm3" path="res://scenes/ui/main menu/MainMenu.cs" id="1_xp6bh"]
+[ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="2_llmaj"]
+[ext_resource type="Texture2D" uid="uid://dewmswvc3dkad" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Hover.png" id="3_oc7rr"]
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="4_g5ybq"]
+
+[node name="MainMenu" type="Control" unique_id=1238673344]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xp6bh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1119996284]
+layout_mode = 1
+offset_right = 450.0
+offset_bottom = 1080.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="New Game" type="TextureButton" parent="VBoxContainer" unique_id=1272239265]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_88lc1")
+texture_pressed = ExtResource("2_llmaj")
+texture_hover = ExtResource("3_oc7rr")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/New Game" unique_id=1371125860]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("4_g5ybq")
+theme_override_font_sizes/font_size = 50
+text = "Nowa gra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="VBoxContainer" unique_id=1822543789]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_88lc1")
+texture_pressed = ExtResource("2_llmaj")
+texture_hover = ExtResource("3_oc7rr")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Settings" unique_id=33465193]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("4_g5ybq")
+theme_override_font_sizes/font_size = 50
+text = "Ustawienia"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Credits" type="TextureButton" parent="VBoxContainer" unique_id=1438009568]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_88lc1")
+texture_pressed = ExtResource("2_llmaj")
+texture_hover = ExtResource("3_oc7rr")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Credits" unique_id=330919013]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("4_g5ybq")
+theme_override_font_sizes/font_size = 50
+text = "Autorzy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=1063081321]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Quit" type="TextureButton" parent="VBoxContainer" unique_id=1400797292]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_88lc1")
+texture_pressed = ExtResource("2_llmaj")
+texture_hover = ExtResource("3_oc7rr")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Quit" unique_id=1078070520]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("4_g5ybq")
+theme_override_font_sizes/font_size = 50
+text = "Wyjdź"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/New Game" to="." method="OnNewGamePressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="OnCreditsPressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="OnQuitPressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1eu6xne5xif5"
-path="res://.godot/imported/woodenbridge.png-fca1646e6b490454c9cd9f80a4fab551.ctex"
+uid="uid://bcfuq7wk284os"
+path="res://.godot/imported/bridge.png-f4c7f08fcc20c371a1abaf6e11525c16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/environment/tilesheets/woodenbridge.png"
-dest_files=["res://.godot/imported/woodenbridge.png-fca1646e6b490454c9cd9f80a4fab551.ctex"]
+source_file="res://assets/environment/tilesheets/bridges/bridge.png"
+dest_files=["res://.godot/imported/bridge.png-f4c7f08fcc20c371a1abaf6e11525c16.ctex"]
 
 [params]
 

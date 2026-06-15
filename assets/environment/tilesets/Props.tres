@@ -2,7 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://c7pu2i5vdg4u5" path="res://assets/sprites/props/Bushe1.png" id="1_8wn0x"]
 [ext_resource type="Texture2D" uid="uid://c46h1kccbb0x5" path="res://assets/sprites/props/Bushe2.png" id="2_p7i0s"]
+[ext_resource type="Texture2D" uid="uid://7hnl06p2c1oj" path="res://assets/sprites/props/automat_idle.png" id="3_t3ls2"]
 [ext_resource type="Texture2D" uid="uid://bx5s5g3uyhj0y" path="res://assets/sprites/props/Bushe3.png" id="3_v6647"]
+[ext_resource type="Texture2D" uid="uid://dq0itvocc1i8s" path="res://assets/sprites/props/automat_used.png" id="4_6614e"]
 [ext_resource type="Texture2D" uid="uid://wij85agn7hf8" path="res://assets/sprites/props/Props.png" id="4_iyeuk"]
 [ext_resource type="Texture2D" uid="uid://bktjfldo0ira" path="res://assets/sprites/props/Stump 2.png" id="5_xk654"]
 [ext_resource type="Texture2D" uid="uid://b0gy461uly6ob" path="res://assets/sprites/props/Tree2.png" id="6_t3ls2"]
@@ -35,6 +37,38 @@ texture_region_size = Vector2i(128, 128)
 0:0/animation_frame_5/duration = 1.0
 0:0/animation_frame_6/duration = 1.0
 0:0/animation_frame_7/duration = 1.0
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_46354"]
+texture = ExtResource("3_t3ls2")
+texture_region_size = Vector2i(96, 128)
+0:0/animation_speed = 8.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_woos6"]
+texture = ExtResource("4_6614e")
+texture_region_size = Vector2i(96, 128)
+0:0/animation_speed = 8.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/animation_frame_8/duration = 1.0
+0:0/animation_frame_9/duration = 1.0
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwdnn"]
@@ -139,7 +173,9 @@ texture_region_size = Vector2i(75, 84)
 0:1/0 = 0
 4:2/0 = 0
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -5.333333, 5.333334, -5.333333, 16, 0, 5.333334, 32, -26.666668, 32, -37.333336, 0)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -5.333333, 5.333334, -5.333333, 16, 0, 5.333334, 32, -26.666668, 32, -37.333336, 0)
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -170,3 +206,5 @@ sources/6 = SubResource("TileSetAtlasSource_u06j6")
 sources/7 = SubResource("TileSetAtlasSource_v6647")
 sources/8 = SubResource("TileSetAtlasSource_6614e")
 sources/9 = SubResource("TileSetAtlasSource_fvamu")
+sources/10 = SubResource("TileSetAtlasSource_46354")
+sources/11 = SubResource("TileSetAtlasSource_woos6")

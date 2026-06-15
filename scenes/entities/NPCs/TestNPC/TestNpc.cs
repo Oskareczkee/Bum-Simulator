@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class TestNpc : StaticBody2D
 {
@@ -23,7 +22,5 @@ public partial class TestNpc : StaticBody2D
             DialogueStream.Play();
     }
 
-    public override void _Process(double delta)
-	{
-	}
+    public override void _Process(double delta){}
 }

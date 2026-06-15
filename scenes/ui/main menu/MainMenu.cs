@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class MainMenu : Control
 {
@@ -10,13 +9,10 @@ public partial class MainMenu : Control
 
     public override void _Ready()
 	{
-	}
+		Input.MouseMode = Input.MouseModeEnum.Visible;
+    }
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
-
+	public override void _Process(double delta){}
 
 	private void OnNewGamePressed()
 	{

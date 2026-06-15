@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dnjkyi8o73ykv"]
 
-[ext_resource type="Script" uid="uid://b65tdc5lnrglw" path="res://InteractingComponent.cs" id="1_j41if"]
+[ext_resource type="Script" uid="uid://b65tdc5lnrglw" path="res://interaction_components/InteractingComponent.cs" id="1_j41if"]
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="2_2574u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2574u"]
 radius = 8.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_1fsor"]
-font_size = 8
+font = ExtResource("2_2574u")
+font_size = 20
 
 [node name="InteractingComponent" type="Node2D" unique_id=1065531858]
 script = ExtResource("1_j41if")
@@ -25,10 +27,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -31.0
-offset_top = -31.0
-offset_right = 31.0
-offset_bottom = -8.0
+offset_left = -54.0
+offset_top = -50.0
+offset_right = 54.0
+offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Interaction Text"

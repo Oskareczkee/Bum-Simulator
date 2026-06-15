@@ -2,9 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="1_88lc1"]
 [ext_resource type="Script" uid="uid://dbtxadxrf4mm3" path="res://scenes/ui/main menu/MainMenu.cs" id="1_xp6bh"]
+[ext_resource type="PackedScene" uid="uid://dqarbf8eiq1j" path="res://scenes/maps/MenuBackground/MenuBackground.tscn" id="2_djkt8"]
 [ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="2_llmaj"]
 [ext_resource type="Texture2D" uid="uid://dewmswvc3dkad" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Hover.png" id="3_oc7rr"]
 [ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="4_g5ybq"]
+[ext_resource type="AudioStream" uid="uid://5h6223o61buw" path="res://scenes/ui/main menu/Background.mp3" id="6_tq721"]
 
 [node name="MainMenu" type="Control" unique_id=1238673344]
 layout_mode = 3
@@ -15,14 +17,40 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xp6bh")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1119996284]
-layout_mode = 1
-offset_right = 450.0
+[node name="Root" parent="." unique_id=1789326611 instance=ExtResource("2_djkt8")]
+position = Vector2(-1817, -2134)
+
+[node name="MainMenuContainer" type="Node" parent="." unique_id=378134542]
+unique_name_in_owner = true
+
+[node name="ColorRect" type="ColorRect" parent="MainMenuContainer" unique_id=1306373421]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5254902)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenuContainer" unique_id=1119996284]
+offset_left = 50.0
+offset_right = 572.0
 offset_bottom = 1080.0
 theme_override_constants/separation = 25
 alignment = 1
 
-[node name="New Game" type="TextureButton" parent="VBoxContainer" unique_id=1272239265]
+[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer" unique_id=1882040725]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("4_g5ybq")
+theme_override_font_sizes/font_size = 80
+text = "Symulator żula"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="New Game" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1272239265]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -31,7 +59,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/New Game" unique_id=1371125860]
+[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/New Game" unique_id=1371125860]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -47,7 +75,7 @@ text = "Nowa gra"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Settings" type="TextureButton" parent="VBoxContainer" unique_id=1822543789]
+[node name="Settings" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1822543789]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -56,7 +84,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/Settings" unique_id=33465193]
+[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Settings" unique_id=33465193]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -72,7 +100,7 @@ text = "Ustawienia"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Credits" type="TextureButton" parent="VBoxContainer" unique_id=1438009568]
+[node name="Credits" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1438009568]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -81,7 +109,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/Credits" unique_id=330919013]
+[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Credits" unique_id=330919013]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -97,11 +125,11 @@ text = "Autorzy"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=1063081321]
+[node name="Spacer" type="Control" parent="MainMenuContainer/VBoxContainer" unique_id=1063081321]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="Quit" type="TextureButton" parent="VBoxContainer" unique_id=1400797292]
+[node name="Quit" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1400797292]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -110,7 +138,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/Quit" unique_id=1078070520]
+[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Quit" unique_id=1078070520]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -126,7 +154,13 @@ text = "Wyjdź"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/New Game" to="." method="OnNewGamePressed"]
-[connection signal="pressed" from="VBoxContainer/Settings" to="." method="OnSettingsPressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="OnCreditsPressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="OnQuitPressed"]
+[node name="Background" type="AudioStreamPlayer" parent="." unique_id=317288672]
+stream = ExtResource("6_tq721")
+volume_db = -20.0
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="MainMenuContainer/VBoxContainer/New Game" to="." method="OnNewGamePressed"]
+[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Credits" to="." method="OnCreditsPressed"]
+[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Quit" to="." method="OnQuitPressed"]

@@ -21,6 +21,8 @@ public partial class PlayerScript : CharacterBody2D
 	private PlayerState _state = PlayerState.IDLE;
 	public override void _Ready()
 	{
+		Input.MouseMode = Input.MouseModeEnum.Hidden;
+
 		_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
         intoxication = maxIntoxication;
@@ -86,8 +88,11 @@ public partial class PlayerScript : CharacterBody2D
 		}
 	}
 
-	private void Death()
+	private async void Death()
 	{
+        await ToSignal(GetTree().CreateTimer(0.4), SceneTreeTimer.SignalName.Timeout); //wait for animations or etc...
+		this.ProcessMode = ProcessModeEnum.Disabled; //remove processing for player
+
         EmitSignal(SignalName.GameOver);
     }
 

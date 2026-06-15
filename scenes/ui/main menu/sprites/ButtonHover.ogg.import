@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sp6jh0u468xp"
+path="res://.godot/imported/ButtonHover.ogg-7958c3018a1bc1ad0641b86a32edb5ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://scenes/ui/main menu/sprites/ButtonHover.ogg"
+dest_files=["res://.godot/imported/ButtonHover.ogg-7958c3018a1bc1ad0641b86a32edb5ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

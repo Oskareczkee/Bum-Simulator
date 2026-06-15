@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://2oybgwu2v5ks" path="res://scenes/entities/Props/TrashCan/TrashCanScript.cs" id="1_lyytp"]
 [ext_resource type="Texture2D" uid="uid://5k1er7uny8hq" path="res://scenes/entities/Props/TrashCan/trash-can.png" id="1_v2uck"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="2_lyytp"]
+[ext_resource type="AudioStream" uid="uid://cfxbfd4j4wfdf" path="res://scenes/entities/Props/TrashCan/TrashCanSound.mp3" id="4_ekpj3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hsp8r"]
 
@@ -26,3 +27,8 @@ InteractName = "Open (E) Trash Can"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=780607662]
 position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_r3o88")
+
+[node name="OpenSound" type="AudioStreamPlayer2D" parent="." unique_id=1208367565]
+stream = ExtResource("4_ekpj3")
+volume_db = -20.0
+pitch_scale = 0.8

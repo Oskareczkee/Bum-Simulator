@@ -3,128 +3,24 @@
 [ext_resource type="Script" uid="uid://detp15sm4g08v" path="res://scenes/GameManager.cs" id="1_qppyr"]
 [ext_resource type="PackedScene" uid="uid://c7f88wb67ieul" path="res://scenes/ui/main menu/MainMenu.tscn" id="2_4dhvd"]
 [ext_resource type="PackedScene" uid="uid://6rralnnr3wx7" path="res://scenes/ui/game over/EndGameScreen.tscn" id="3_1jauj"]
-[ext_resource type="PackedScene" uid="uid://bc7u533fij8o0" path="res://scenes/maps/Test.tscn" id="3_4dhvd"]
-[ext_resource type="Script" uid="uid://gla14ysjwq2f" path="res://scenes/ui/hud/Hud.cs" id="4_2chjq"]
-[ext_resource type="Texture2D" uid="uid://ckeli74q0nit" path="res://scenes/ui/hud/UI_Bar_Wooden.png" id="5_1jauj"]
-[ext_resource type="Texture2D" uid="uid://c4d44w2sdvd8b" path="res://scenes/ui/hud/UI_Bar_Fill.png" id="6_biy4i"]
-[ext_resource type="Texture2D" uid="uid://bvlmyetli7end" path="res://scenes/ui/hud/Metal_can_Icon.png" id="7_4arur"]
-[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="8_55cbs"]
-[ext_resource type="Texture2D" uid="uid://0vmj6b3qweqs" path="res://scenes/ui/hud/Glass_bottle_Icon.png" id="9_endxa"]
+[ext_resource type="PackedScene" uid="uid://bc7u533fij8o0" path="res://scenes/maps/Start/Test.tscn" id="3_4dhvd"]
+[ext_resource type="PackedScene" uid="uid://c4mcfgw0rfqco" path="res://scenes/ui/main menu/credits/Credits.tscn" id="5_4arur"]
+[ext_resource type="PackedScene" uid="uid://c2pa8swvoejjv" path="res://scenes/ui/hud/hud.tscn" id="6_mx40s"]
+[ext_resource type="PackedScene" uid="uid://dhrcjabv6p5a2" path="res://scenes/UIAudioManager.tscn" id="11_biy4i"]
 
 [node name="GameManager" type="Node" unique_id=2057732420]
 script = ExtResource("1_qppyr")
 MainMenuScene = ExtResource("2_4dhvd")
 GameOverScreen = ExtResource("3_1jauj")
 GameScene = ExtResource("3_4dhvd")
+CreditsScene = ExtResource("5_4arur")
 
 [node name="CurrentScene" type="Node" parent="." unique_id=1096754491]
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1398236879]
 
-[node name="HUD" type="Control" parent="UI" unique_id=1452577218]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("4_2chjq")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/HUD" unique_id=31850784]
-layout_mode = 1
-offset_left = 30.0
-offset_top = 30.0
-offset_right = 430.0
-offset_bottom = 360.0
-theme_override_constants/separation = 30
-
-[node name="Intoxication" type="TextureRect" parent="UI/HUD/VBoxContainer" unique_id=833421510]
-custom_minimum_size = Vector2(400, 70)
-layout_mode = 2
-texture = ExtResource("5_1jauj")
-expand_mode = 1
-
-[node name="IntoxicationBar" type="TextureProgressBar" parent="UI/HUD/VBoxContainer/Intoxication" unique_id=1561054001]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(360, 60)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -182.0
-offset_top = -33.0
-offset_right = 178.0
-offset_bottom = 27.0
-grow_horizontal = 2
-grow_vertical = 2
-value = 100.0
-nine_patch_stretch = true
-texture_progress = ExtResource("6_biy4i")
-tint_progress = Color(0.22071499, 0.5636606, 0.84386307, 1)
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="UI/HUD" unique_id=1686418097]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -158.0
-offset_top = 30.0
-offset_right = -30.0
-offset_bottom = 290.0
-grow_horizontal = 0
-
-[node name="MetalCans" type="TextureRect" parent="UI/HUD/VBoxContainer2" unique_id=860482725]
-custom_minimum_size = Vector2(128, 128)
-layout_mode = 2
-texture = ExtResource("7_4arur")
-expand_mode = 1
-
-[node name="MetalCansCount" type="Label" parent="UI/HUD/VBoxContainer2/MetalCans" unique_id=1549623482]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -32.5
-offset_right = 22.0
-offset_bottom = 32.5
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_constants/shadow_outline_size = 16
-theme_override_fonts/font = ExtResource("8_55cbs")
-theme_override_font_sizes/font_size = 50
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="GlassBottles" type="TextureRect" parent="UI/HUD/VBoxContainer2" unique_id=235512427]
-custom_minimum_size = Vector2(128, 128)
-layout_mode = 2
-texture = ExtResource("9_endxa")
-expand_mode = 1
-
-[node name="GlassBottlesCount" type="Label" parent="UI/HUD/VBoxContainer2/GlassBottles" unique_id=829382673]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -32.5
-offset_right = 22.0
-offset_bottom = 32.5
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_constants/shadow_outline_size = 16
-theme_override_fonts/font = ExtResource("8_55cbs")
-theme_override_font_sizes/font_size = 50
-text = "0"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="HUD" parent="UI" unique_id=951019108 instance=ExtResource("6_mx40s")]
 
 [node name="UIExternal" type="CanvasLayer" parent="." unique_id=1050080188]
+
+[node name="UIAudioManager" parent="." unique_id=789936671 instance=ExtResource("11_biy4i")]

@@ -15,10 +15,19 @@ run/main_scene="uid://conrik55qqgu6"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://ckk7tfx0khjtl"
+
+[autoload]
+
+PlayerData="*uid://cygyr755sevgl"
+
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+mouse_cursor/custom_image="uid://c1uxbnp2ljqh"
 
 [dotnet]
 

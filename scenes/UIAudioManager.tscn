@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dhrcjabv6p5a2"]
+
+[ext_resource type="Script" uid="uid://3nsqgqv4trru" path="res://scenes/UIAudioManager.cs" id="1_tnkv4"]
+[ext_resource type="AudioStream" uid="uid://bryjrship4kam" path="res://scenes/ui/main menu/sprites/ButtonClick.ogg" id="2_avxo2"]
+[ext_resource type="AudioStream" uid="uid://sp6jh0u468xp" path="res://scenes/ui/main menu/sprites/ButtonHover.ogg" id="3_avxo2"]
+
+[node name="UiAudioManager" type="Node" unique_id=789936671]
+script = ExtResource("1_tnkv4")
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=1964348113]
+stream = ExtResource("2_avxo2")
+volume_db = -20.0
+
+[node name="ButtonHover" type="AudioStreamPlayer" parent="." unique_id=715268773]
+stream = ExtResource("3_avxo2")
+volume_db = -20.0
+pitch_scale = 0.75

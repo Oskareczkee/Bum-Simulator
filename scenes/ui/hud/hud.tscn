@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://c2pa8swvoejjv"]
+
+[ext_resource type="Script" uid="uid://gla14ysjwq2f" path="res://scenes/ui/hud/Hud.cs" id="1_4m4yb"]
+[ext_resource type="Texture2D" uid="uid://ckeli74q0nit" path="res://scenes/ui/hud/UI_Bar_Wooden.png" id="2_todbw"]
+[ext_resource type="Texture2D" uid="uid://c4d44w2sdvd8b" path="res://scenes/ui/hud/UI_Bar_Fill.png" id="3_e7gie"]
+[ext_resource type="Texture2D" uid="uid://bvlmyetli7end" path="res://scenes/ui/hud/Metal_can_Icon.png" id="4_swth0"]
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="5_a660p"]
+[ext_resource type="Texture2D" uid="uid://0vmj6b3qweqs" path="res://scenes/ui/hud/Glass_bottle_Icon.png" id="6_m7evv"]
+[ext_resource type="Texture2D" uid="uid://bvwmc5ci7eyhv" path="res://scenes/ui/hud/coin.png" id="7_todbw"]
+
+[node name="HUD" type="Control" unique_id=951019108]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4m4yb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=103386748]
+layout_mode = 1
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 430.0
+offset_bottom = 360.0
+theme_override_constants/separation = 30
+
+[node name="Intoxication" type="TextureRect" parent="VBoxContainer" unique_id=1497208720]
+custom_minimum_size = Vector2(400, 70)
+layout_mode = 2
+texture = ExtResource("2_todbw")
+expand_mode = 1
+
+[node name="IntoxicationBar" type="TextureProgressBar" parent="VBoxContainer/Intoxication" unique_id=1201327818]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(360, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -33.0
+offset_right = 178.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("3_e7gie")
+tint_progress = Color(0.22071499, 0.5636606, 0.84386307, 1)
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1512931436]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -158.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = 290.0
+grow_horizontal = 0
+
+[node name="MetalCans" type="TextureRect" parent="VBoxContainer2" unique_id=833315578]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("4_swth0")
+expand_mode = 1
+
+[node name="MetalCansCount" type="Label" parent="VBoxContainer2/MetalCans" unique_id=1569054289]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -32.5
+offset_right = -136.0
+offset_bottom = 32.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("5_a660p")
+theme_override_font_sizes/font_size = 50
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GlassBottles" type="TextureRect" parent="VBoxContainer2" unique_id=1029089362]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("6_m7evv")
+expand_mode = 1
+
+[node name="GlassBottlesCount" type="Label" parent="VBoxContainer2/GlassBottles" unique_id=976087494]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -32.5
+offset_right = -136.0
+offset_bottom = 32.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("5_a660p")
+theme_override_font_sizes/font_size = 50
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="TextureRect" parent="VBoxContainer2" unique_id=1080213480]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("7_todbw")
+expand_mode = 1
+
+[node name="MoneyCount" type="Label" parent="VBoxContainer2/Money" unique_id=1219228917]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -32.5
+offset_right = -136.0
+offset_bottom = 32.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("5_a660p")
+theme_override_font_sizes/font_size = 50
+text = "0.00"
+horizontal_alignment = 2
+vertical_alignment = 1

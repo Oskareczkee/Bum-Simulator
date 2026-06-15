@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://djhbiyy8pvthi"]
+
+[ext_resource type="Script" uid="uid://c3oxx0bv00arg" path="res://BottleMachine.cs" id="1_td0m4"]
+[ext_resource type="Texture2D" uid="uid://c6vqlvqsgpmm8" path="res://scenes/entities/Props/BottleMachine/cabinet01-on.png" id="2_dfg4s"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_do4a6"]
+[ext_resource type="AudioStream" uid="uid://cfxbfd4j4wfdf" path="res://scenes/entities/Props/TrashCan/TrashCanSound.mp3" id="4_eq5e2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehn85"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(0, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia3kv"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(50, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18rq1"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(100, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fpe5"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(150, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdhfx"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(200, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmygy"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(250, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34dfx"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(300, 0, 50, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqwyq"]
+atlas = ExtResource("2_dfg4s")
+region = Rect2(350, 0, 50, 65)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_csk22"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehn85")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia3kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18rq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fpe5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdhfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmygy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34dfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqwyq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hsp8r"]
+radius = 37.513332
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r3o88"]
+radius = 31.750984
+
+[node name="BottleMachine" type="StaticBody2D" unique_id=1107737104]
+script = ExtResource("1_td0m4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1888769424]
+position = Vector2(1, 0)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_csk22")
+animation = &"idle"
+autoplay = "idle"
+frame = 4
+frame_progress = 0.28433377
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1917555805]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_hsp8r")
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("3_do4a6")]
+scale = Vector2(2, 2)
+InteractName = "Sell Glass Bottle (E)"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=780607662]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_r3o88")
+
+[node name="OpenSound" type="AudioStreamPlayer2D" parent="." unique_id=1208367565]
+stream = ExtResource("4_eq5e2")
+volume_db = -20.0
+pitch_scale = 0.8

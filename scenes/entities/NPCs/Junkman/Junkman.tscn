@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://bv1cd0kwp8b4j"]
+
+[ext_resource type="Script" uid="uid://bt7cas1nsipcy" path="res://scenes/entities/NPCs/Junkman/Junkman.cs" id="1_6t514"]
+[ext_resource type="Texture2D" uid="uid://sotlwo5f0i7r" path="res://scenes/entities/NPCs/Junkman/Junkman_Idle.png" id="2_s04lk"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_m7mws"]
+[ext_resource type="AudioStream" uid="uid://b4n1rslxobnpo" path="res://scenes/entities/NPCs/TestNPC/TestSound.mp3" id="4_mgscn"]
+[ext_resource type="AudioStream" uid="uid://crkioafkvrg5h" path="res://scenes/entities/NPCs/Junkman/anvil_hit.mp3" id="5_s04lk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_53gfc"]
+radius = 23.086792
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7mws"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgscn"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftl4m"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxw1e"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqww1"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5uru"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_px725"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eulov"]
+atlas = ExtResource("2_s04lk")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d01wx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7mws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgscn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftl4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxw1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqww1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5uru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_px725")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eulov")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qavoi"]
+radius = 22.784315
+
+[node name="Junkman" type="StaticBody2D" unique_id=362253245]
+scale = Vector2(1.75, 1.75)
+script = ExtResource("1_6t514")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47981438]
+scale = Vector2(1.75, 1.75)
+shape = SubResource("CircleShape2D_53gfc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=647324468]
+scale = Vector2(1.75, 1.75)
+sprite_frames = SubResource("SpriteFrames_d01wx")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.68627447
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("3_m7mws")]
+scale = Vector2(1.75, 1.75)
+InteractName = "Sell Can (E)"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1870017555]
+scale = Vector2(1.75, 1.75)
+shape = SubResource("CircleShape2D_qavoi")
+
+[node name="DialogueStream" type="AudioStreamPlayer2D" parent="." unique_id=230653953]
+stream = ExtResource("4_mgscn")
+volume_db = -5.0
+max_distance = 400.0
+attenuation = 3.0
+
+[node name="AnvilHit" type="AudioStreamPlayer2D" parent="." unique_id=682479740]
+stream = ExtResource("5_s04lk")
+volume_db = -20.0
+pitch_scale = 0.9
+autoplay = true
+max_distance = 500.0
+attenuation = 3.0
+parameters/looping = true

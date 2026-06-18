@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://7hnl06p2c1oj" path="res://assets/sprites/props/automat_idle.png" id="3_aw1sm"]
 [ext_resource type="Texture2D" uid="uid://dq0itvocc1i8s" path="res://assets/sprites/props/automat_used.png" id="4_lk5nf"]
 [ext_resource type="Texture2D" uid="uid://bx5s5g3uyhj0y" path="res://assets/sprites/props/Bushe3.png" id="5_4b5sx"]
+[ext_resource type="Texture2D" uid="uid://dbgn3p3bsea3a" path="res://assets/sprites/props/buildings/frog_shop1.png" id="5_wtgvg"]
 [ext_resource type="Texture2D" uid="uid://wij85agn7hf8" path="res://assets/sprites/props/Props.png" id="6_q6dfm"]
 [ext_resource type="Texture2D" uid="uid://bktjfldo0ira" path="res://assets/sprites/props/Stump 2.png" id="7_4dhws"]
 [ext_resource type="Texture2D" uid="uid://b0gy461uly6ob" path="res://assets/sprites/props/Tree2.png" id="8_sk5jy"]
@@ -72,6 +73,12 @@ texture_region_size = Vector2i(96, 128)
 0:0/animation_frame_9/duration = 1.0
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37.333336, 58.66667, 37.333336, 58.66667, 37.333336, 0, -37.333336, 0)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aw1sm"]
+texture = ExtResource("5_wtgvg")
+texture_region_size = Vector2i(384, 395)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-176, -21.333334, 181.33334, -21.333334, 165.33334, 154.66667, 144, 165.33334, 32, 165.33334, 32, 128, -32, 128, -32, 165.33334, -160, 160)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwdnn"]
 texture = ExtResource("5_4b5sx")
@@ -229,3 +236,4 @@ sources/8 = SubResource("TileSetAtlasSource_6614e")
 sources/9 = SubResource("TileSetAtlasSource_fvamu")
 sources/10 = SubResource("TileSetAtlasSource_46354")
 sources/11 = SubResource("TileSetAtlasSource_woos6")
+sources/13 = SubResource("TileSetAtlasSource_aw1sm")

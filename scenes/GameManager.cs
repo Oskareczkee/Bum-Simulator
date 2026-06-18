@@ -10,6 +10,7 @@ public partial class GameManager : Node
 
 	private Node CurrentScene;
 	private UIAudioManager UIAudio;
+	private AudioManager Audio;
 
 
     // Called when the node enters the scene tree for the first time.
@@ -17,6 +18,7 @@ public partial class GameManager : Node
 	{
 		CurrentScene = GetNode<Node>("CurrentScene");
 		UIAudio = GetNode<UIAudioManager>("UIAudioManager");
+		Audio = GetNode<AudioManager>("AudioManager");
 
 		LoadMainMenu("game_start");
 	}

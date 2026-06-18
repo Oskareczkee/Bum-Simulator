@@ -7,6 +7,7 @@ public partial class Hud : Control
     private Label metalCansCounter;
     private Label glassBottlesCounter;
     private Label moneyCounter;
+    private Label beerCounter;
 
     public override void _Ready()
     {
@@ -14,6 +15,7 @@ public partial class Hud : Control
         metalCansCounter = GetNode<Label>("%MetalCansCount");
         glassBottlesCounter = GetNode<Label>("%GlassBottlesCount");
         moneyCounter = GetNode<Label>("%MoneyCount");
+        beerCounter = GetNode<Label>("%BeerCount");
     }
 
     public void UpdateIntoxicationBar(int newPercentValue)
@@ -36,5 +38,9 @@ public partial class Hud : Control
         moneyCounter.Text = newValue.ToString("F2");
     }
 
+    public void UpdateBeer(int newValue)
+    {
+        beerCounter.Text = newValue.ToString();
+    }
 
 }

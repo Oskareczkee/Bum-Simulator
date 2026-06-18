@@ -9,12 +9,14 @@ public partial class BottleMachine : StaticBody2D
     private Interactable Interactable;
     private AnimatedSprite2D Sprite2D;
     private Hud HUD;
+    private AudioManager AudioManager;
 
     public override void _Ready()
     {
         Interactable = GetNode<Interactable>("Interactable");
         Sprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
+        AudioManager = GetNode<AudioManager>("/root/GameManager/AudioManager");
 
         Interactable.Interact += OnInteract;
 
@@ -24,7 +26,6 @@ public partial class BottleMachine : StaticBody2D
 
     private void OnInteract()
     {
-        GD.Print("Player interacted with glass bottles machine");
 
         if (PlayerData.Instance.GlassBottles == 0)
             return; //Add reject sound
@@ -35,7 +36,7 @@ public partial class BottleMachine : StaticBody2D
         EmitSignal(SignalName.UpdateGlassBottlesCounter, PlayerData.Instance.GlassBottles);
         EmitSignal(SignalName.UpdateMoneyCounter, PlayerData.Instance.Money);
 
-        //Add sound here
+        AudioManager.PlaySellSound();
     }
 
     public override void _Process(double delta) { }

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckeli74q0nit"
-path="res://.godot/imported/UI_Bar_Wooden.png-d685b3d26775f19609da371b57d8e605.ctex"
+uid="uid://bvlmyetli7end"
+path="res://.godot/imported/Metal_can_Icon.png-29aa3b9ac475e983bbd15f84cbbc0580.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/ui/hud/UI_Bar_Wooden.png"
-dest_files=["res://.godot/imported/UI_Bar_Wooden.png-d685b3d26775f19609da371b57d8e605.ctex"]
+source_file="res://scenes/ui/hud/icons/Metal_can_Icon.png"
+dest_files=["res://.godot/imported/Metal_can_Icon.png-29aa3b9ac475e983bbd15f84cbbc0580.ctex"]
 
 [params]
 

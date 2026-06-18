@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bc7u533fij8o0" path="res://scenes/maps/Start/Test.tscn" id="3_4dhvd"]
 [ext_resource type="PackedScene" uid="uid://c4mcfgw0rfqco" path="res://scenes/ui/main menu/credits/Credits.tscn" id="5_4arur"]
 [ext_resource type="PackedScene" uid="uid://c2pa8swvoejjv" path="res://scenes/ui/hud/hud.tscn" id="6_mx40s"]
+[ext_resource type="PackedScene" uid="uid://cmkpe3suyg2pd" path="res://scenes/AudioManager.tscn" id="8_2uts2"]
 [ext_resource type="PackedScene" uid="uid://dhrcjabv6p5a2" path="res://scenes/UIAudioManager.tscn" id="11_biy4i"]
 
 [node name="GameManager" type="Node" unique_id=2057732420]
@@ -24,3 +25,5 @@ CreditsScene = ExtResource("5_4arur")
 [node name="UIExternal" type="CanvasLayer" parent="." unique_id=1050080188]
 
 [node name="UIAudioManager" parent="." unique_id=789936671 instance=ExtResource("11_biy4i")]
+
+[node name="AudioManager" parent="." unique_id=1147646727 instance=ExtResource("8_2uts2")]

@@ -24,7 +24,6 @@ public partial class Junkman : StaticBody2D
 
     private void OnInteract()
     {
-        GD.Print("Player interacted with junkman");
 
         if (!DialogueStream.Playing)
             DialogueStream.Play();

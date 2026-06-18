@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0vmj6b3qweqs"
-path="res://.godot/imported/Glass_bottle_Icon.png-08f78f5cc57fa3d4eae5a217acad1ac0.ctex"
+uid="uid://c4d44w2sdvd8b"
+path="res://.godot/imported/UI_Bar_Fill.png-92faa415ccd2eaeef04380ae2e346922.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/ui/hud/Glass_bottle_Icon.png"
-dest_files=["res://.godot/imported/Glass_bottle_Icon.png-08f78f5cc57fa3d4eae5a217acad1ac0.ctex"]
+source_file="res://scenes/ui/hud/icons/UI_Bar_Fill.png"
+dest_files=["res://.godot/imported/UI_Bar_Fill.png-92faa415ccd2eaeef04380ae2e346922.ctex"]
 
 [params]
 

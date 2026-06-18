@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvlmyetli7end"
-path="res://.godot/imported/Metal_can_Icon.png-3ae3a2e8304e295755fc8b13204c24e3.ctex"
+uid="uid://41ea1cslbt1w"
+path="res://.godot/imported/beer_icon.png-558df02b41bcafc0bbf0364e893329ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/ui/hud/Metal_can_Icon.png"
-dest_files=["res://.godot/imported/Metal_can_Icon.png-3ae3a2e8304e295755fc8b13204c24e3.ctex"]
+source_file="res://scenes/ui/hud/icons/beer_icon.png"
+dest_files=["res://.godot/imported/beer_icon.png-558df02b41bcafc0bbf0364e893329ce.ctex"]
 
 [params]
 

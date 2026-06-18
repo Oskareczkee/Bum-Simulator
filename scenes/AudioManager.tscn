@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cmkpe3suyg2pd"]
+
+[ext_resource type="Script" uid="uid://dhk2bj8xg2nle" path="res://scenes/AudioManager.cs" id="1_kbnxs"]
+[ext_resource type="AudioStream" uid="uid://cgpuwrleo1g4w" path="res://assets/sounds/sell_sound.mp3" id="2_nma71"]
+
+[node name="AudioManger" type="Node" unique_id=1654488308]
+script = ExtResource("1_kbnxs")
+
+[node name="SellSound" type="AudioStreamPlayer" parent="." unique_id=1585668472]
+stream = ExtResource("2_nma71")
+volume_db = -20.0
+max_polyphony = 5

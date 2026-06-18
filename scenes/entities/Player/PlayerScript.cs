@@ -1,21 +1,22 @@
 using Godot;
-using System;
-using static Godot.WebSocketPeer;
 
 public enum PlayerState { IDLE, RUN };
 
 public partial class PlayerScript : CharacterBody2D
 {
 	[Signal] public delegate void UpdateIntoxicationBarEventHandler(int percent_value);
+	[Signal] public delegate void UpdateBeerCounterEventHandler(int newValue);
 	[Signal] public delegate void GameOverEventHandler();
 
 	[Export] public float Speed = 300.0f;
 
     private Hud HUD;
 
-    public double intoxicationLossPerMinute = 40.0f;
-    public double maxIntoxication = 400.0f;
+    public const double intoxicationLossPerMinute = 40.0f;
+    public const double maxIntoxication = 400.0f;
     public double intoxication = 400.0f;
+
+	public const double beerIntoxicationPoints = 50.0f;
 
     private AnimatedSprite2D _sprite;
 	private PlayerState _state = PlayerState.IDLE;
@@ -28,6 +29,8 @@ public partial class PlayerScript : CharacterBody2D
         intoxication = maxIntoxication;
 
 		UpdateIntoxicationBar += HUD.UpdateIntoxicationBar;
+		UpdateBeerCounter += HUD.UpdateBeer;
+
         GameOver += DisplayGameOver;
     }
 
@@ -39,6 +42,21 @@ public partial class PlayerScript : CharacterBody2D
 
 		UpdateIntoxication(delta);
 	}
+
+    public override void _Input(InputEvent @event)
+    {
+		//this -10 prevents healing when player has too much intoxication
+		if (@event.IsActionPressed("heal") && intoxication < maxIntoxication - 10 && PlayerData.Instance.Beer > 0)
+		{
+			PlayerData.Instance.Beer--;
+			intoxication += beerIntoxicationPoints;
+
+			if (intoxication > maxIntoxication) intoxication = maxIntoxication;
+
+			EmitSignal(SignalName.UpdateIntoxicationBar, intoxication);
+			EmitSignal(SignalName.UpdateBeerCounter, PlayerData.Instance.Beer);
+		}
+    }
 
 	private void MovementLoop()
 	{

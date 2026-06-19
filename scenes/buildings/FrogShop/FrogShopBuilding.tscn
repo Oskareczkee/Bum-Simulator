@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cieeq2hojhr88"]
+
+[ext_resource type="Script" uid="uid://bldupxnmoya03" path="res://scenes/buildings/FrogShop/FrogShopBuilding.cs" id="1_cnosb"]
+[ext_resource type="Texture2D" uid="uid://dam6bs0mptvqi" path="res://scenes/buildings/FrogShop/frog_shop.png" id="2_eair5"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_l5a34"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fefwi"]
+radius = 113.0
+
+[node name="FrogShopBuilding" type="Node2D" unique_id=13769763]
+script = ExtResource("1_cnosb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=12970177]
+texture = ExtResource("2_eair5")
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("3_l5a34")]
+InteractName = "(E) Enter FrogShop"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=751078891]
+position = Vector2(0, 184)
+shape = SubResource("CircleShape2D_fefwi")

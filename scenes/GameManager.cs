@@ -127,12 +127,40 @@ public partial class GameManager : Node
         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame); //wait 1 idle frame to ensure game manager has been removed
     }
 
-	public async void ChangeCurrentScene(PackedScene scene, bool loadDefaultStartingScript=true)
+	public async void ChangeCurrentScene(PackedScene scene)
 	{
+		await PlayCloseTransition();
 		await ClearCurrentScene();
+
 		var sceneInstance = scene.Instantiate();
 		CurrentScene.AddChild(sceneInstance);
+
+		await PlayOpenTransition();
 	}
+
+	private async Task PlayOpenTransition()
+	{
+		ColorRect rectangle = GetNode<ColorRect>("UI/Transitions/CircleTransition/ColorRect");
+		rectangle.Visible = true; //make it visible
+
+       AnimationPlayer transitionPlayer = GetNode<AnimationPlayer>("UI/Transitions/CircleTransition/ColorRect/AnimationPlayer");
+		transitionPlayer.Play("open");
+
+		await ToSignal(transitionPlayer, AnimationPlayer.SignalName.AnimationFinished);
+        rectangle.Visible = false; //make it invisible
+    }
+
+	private async Task PlayCloseTransition()
+	{
+        ColorRect rectangle = GetNode<ColorRect>("UI/Transitions/CircleTransition/ColorRect");
+        rectangle.Visible = true; //make it visible
+
+        AnimationPlayer transitionPlayer = GetNode<AnimationPlayer>("UI/Transitions/CircleTransition/ColorRect/AnimationPlayer");
+        transitionPlayer.Play("close");
+
+        await ToSignal(transitionPlayer, AnimationPlayer.SignalName.AnimationFinished);
+        rectangle.Visible = false; //make it invisible
+    }
 
 	private async Task ClearCurrentScene()
 	{

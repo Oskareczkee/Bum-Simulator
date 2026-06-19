@@ -7,7 +7,66 @@
 [ext_resource type="PackedScene" uid="uid://c4mcfgw0rfqco" path="res://scenes/ui/main menu/credits/Credits.tscn" id="5_4arur"]
 [ext_resource type="PackedScene" uid="uid://c2pa8swvoejjv" path="res://scenes/ui/hud/hud.tscn" id="6_mx40s"]
 [ext_resource type="PackedScene" uid="uid://cmkpe3suyg2pd" path="res://scenes/AudioManager.tscn" id="8_2uts2"]
+[ext_resource type="Shader" uid="uid://cq82x2wjsjsfc" path="res://shaders/CircleTransition.gdshader" id="9_2chjq"]
 [ext_resource type="PackedScene" uid="uid://dhrcjabv6p5a2" path="res://scenes/UIAudioManager.tscn" id="11_biy4i"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1jauj"]
+shader = ExtResource("9_2chjq")
+shader_parameter/circle_size = 0.0
+
+[sub_resource type="Animation" id="Animation_2chjq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/circle_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_1jauj"]
+resource_name = "close"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/circle_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_biy4i"]
+resource_name = "open"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/circle_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4arur"]
+_data = {
+&"RESET": SubResource("Animation_2chjq"),
+&"close": SubResource("Animation_1jauj"),
+&"open": SubResource("Animation_biy4i")
+}
 
 [node name="GameManager" type="Node" unique_id=2057732420]
 script = ExtResource("1_qppyr")
@@ -19,6 +78,23 @@ CreditsScene = ExtResource("5_4arur")
 [node name="CurrentScene" type="Node" parent="." unique_id=1096754491]
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1398236879]
+
+[node name="Transitions" type="Node" parent="UI" unique_id=1857022932]
+
+[node name="CircleTransition" type="Node" parent="UI/Transitions" unique_id=908196911]
+
+[node name="ColorRect" type="ColorRect" parent="UI/Transitions/CircleTransition" unique_id=1471156718]
+visible = false
+material = SubResource("ShaderMaterial_1jauj")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI/Transitions/CircleTransition/ColorRect" unique_id=1054908981]
+libraries/ = SubResource("AnimationLibrary_4arur")
 
 [node name="HUD" parent="UI" unique_id=951019108 instance=ExtResource("6_mx40s")]
 

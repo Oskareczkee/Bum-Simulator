@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://5h6223o61buw" path="res://scenes/ui/main menu/Background.mp3" id="6_tq721"]
 
 [node name="MainMenu" type="Control" unique_id=1238673344]
+show_behind_parent = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +21,7 @@ script = ExtResource("1_xp6bh")
 [node name="Root" parent="." unique_id=1789326611 instance=ExtResource("2_djkt8")]
 position = Vector2(-1817, -2134)
 
-[node name="MainMenuContainer" type="Node" parent="." unique_id=378134542]
+[node name="MainMenuContainer" type="CanvasLayer" parent="." unique_id=639069725]
 unique_name_in_owner = true
 
 [node name="ColorRect" type="ColorRect" parent="MainMenuContainer" unique_id=1306373421]
@@ -29,16 +30,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.5254902)
+color = Color(0, 0, 0, 0.4862745)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainMenuContainer" unique_id=1119996284]
+[node name="VContainer" type="VBoxContainer" parent="MainMenuContainer" unique_id=1119996284]
 offset_left = 50.0
 offset_right = 572.0
 offset_bottom = 1080.0
 theme_override_constants/separation = 25
 alignment = 1
 
-[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer" unique_id=1882040725]
+[node name="Label" type="Label" parent="MainMenuContainer/VContainer" unique_id=1882040725]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -50,7 +51,7 @@ text = "Symulator żula"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="New Game" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1272239265]
+[node name="New Game" type="TextureButton" parent="MainMenuContainer/VContainer" unique_id=1272239265]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -59,7 +60,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/New Game" unique_id=1371125860]
+[node name="Label" type="Label" parent="MainMenuContainer/VContainer/New Game" unique_id=1371125860]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -71,11 +72,11 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("4_g5ybq")
 theme_override_font_sizes/font_size = 50
-text = "Nowa gra"
+text = "New Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Settings" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1822543789]
+[node name="Settings" type="TextureButton" parent="MainMenuContainer/VContainer" unique_id=1822543789]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -84,7 +85,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Settings" unique_id=33465193]
+[node name="Label" type="Label" parent="MainMenuContainer/VContainer/Settings" unique_id=33465193]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -96,11 +97,11 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("4_g5ybq")
 theme_override_font_sizes/font_size = 50
-text = "Ustawienia"
+text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Credits" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1438009568]
+[node name="Credits" type="TextureButton" parent="MainMenuContainer/VContainer" unique_id=1438009568]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -109,7 +110,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Credits" unique_id=330919013]
+[node name="Label" type="Label" parent="MainMenuContainer/VContainer/Credits" unique_id=330919013]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -121,15 +122,15 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("4_g5ybq")
 theme_override_font_sizes/font_size = 50
-text = "Autorzy"
+text = "Credits"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Spacer" type="Control" parent="MainMenuContainer/VBoxContainer" unique_id=1063081321]
+[node name="Spacer" type="Control" parent="MainMenuContainer/VContainer" unique_id=1063081321]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="Quit" type="TextureButton" parent="MainMenuContainer/VBoxContainer" unique_id=1400797292]
+[node name="Quit" type="TextureButton" parent="MainMenuContainer/VContainer" unique_id=1400797292]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -138,7 +139,7 @@ texture_pressed = ExtResource("2_llmaj")
 texture_hover = ExtResource("3_oc7rr")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="MainMenuContainer/VBoxContainer/Quit" unique_id=1078070520]
+[node name="Label" type="Label" parent="MainMenuContainer/VContainer/Quit" unique_id=1078070520]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -150,17 +151,17 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("4_g5ybq")
 theme_override_font_sizes/font_size = 50
-text = "Wyjdź"
+text = "Quit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Background" type="AudioStreamPlayer" parent="." unique_id=317288672]
 stream = ExtResource("6_tq721")
-volume_db = -20.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
-[connection signal="pressed" from="MainMenuContainer/VBoxContainer/New Game" to="." method="OnNewGamePressed"]
-[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Settings" to="." method="OnSettingsPressed"]
-[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Credits" to="." method="OnCreditsPressed"]
-[connection signal="pressed" from="MainMenuContainer/VBoxContainer/Quit" to="." method="OnQuitPressed"]
+[connection signal="pressed" from="MainMenuContainer/VContainer/New Game" to="." method="OnNewGamePressed"]
+[connection signal="pressed" from="MainMenuContainer/VContainer/Settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="MainMenuContainer/VContainer/Credits" to="." method="OnCreditsPressed"]
+[connection signal="pressed" from="MainMenuContainer/VContainer/Quit" to="." method="OnQuitPressed"]

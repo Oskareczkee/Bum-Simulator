@@ -8,5 +8,5 @@ script = ExtResource("1_kbnxs")
 
 [node name="SellSound" type="AudioStreamPlayer" parent="." unique_id=1585668472]
 stream = ExtResource("2_nma71")
-volume_db = -20.0
 max_polyphony = 5
+bus = &"SFX"

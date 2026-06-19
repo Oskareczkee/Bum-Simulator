@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4mcfgw0rfqco"]
 
-[ext_resource type="Script" uid="uid://c7gkxok54x8mx" path="res://scenes/ui/main menu/credits/Credits.cs" id="1_d5hbi"]
+[ext_resource type="Script" uid="uid://c7gkxok54x8mx" path="res://scenes/ui/credits/Credits.cs" id="1_d5hbi"]
 [ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="2_np2hv"]
 [ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="3_s6a2o"]
 [ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="4_vmap5"]
@@ -15,16 +15,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d5hbi")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=940935366]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1547129717]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.5254902)
+color = Color(0, 0, 0, 0.4862745)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1273065299]
+[node name="CreditsContainer" type="VBoxContainer" parent="." unique_id=1273065299]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -40,7 +40,7 @@ grow_vertical = 2
 theme_override_constants/separation = 50
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=1369433517]
+[node name="Label" type="Label" parent="CreditsContainer" unique_id=1369433517]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -52,11 +52,11 @@ text = "Autorzy"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=1317830871]
+[node name="Spacer2" type="Control" parent="CreditsContainer" unique_id=1317830871]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1573175820]
+[node name="Label2" type="Label" parent="CreditsContainer" unique_id=1573175820]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -67,7 +67,7 @@ theme_override_font_sizes/font_size = 80
 text = "Design: Piotr Trybała"
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="VBoxContainer" unique_id=533636529]
+[node name="Label3" type="Label" parent="CreditsContainer" unique_id=533636529]
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -78,11 +78,11 @@ theme_override_font_sizes/font_size = 80
 text = "Programowanie: Oskar Niedźwiedzki"
 vertical_alignment = 1
 
-[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=878112159]
+[node name="Spacer" type="Control" parent="CreditsContainer" unique_id=878112159]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="Back" type="TextureButton" parent="VBoxContainer" unique_id=328683149]
+[node name="Back" type="TextureButton" parent="CreditsContainer" unique_id=328683149]
 custom_minimum_size = Vector2(450, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -91,7 +91,7 @@ texture_pressed = ExtResource("4_vmap5")
 texture_hover = ExtResource("5_ye2hp")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="VBoxContainer/Back" unique_id=2045916202]
+[node name="Label" type="Label" parent="CreditsContainer/Back" unique_id=2045916202]
 layout_mode = 0
 offset_left = 69.0
 offset_top = 21.0
@@ -103,8 +103,8 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 16
 theme_override_fonts/font = ExtResource("2_np2hv")
 theme_override_font_sizes/font_size = 50
-text = "Powrót"
+text = "Back"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Back" to="." method="OnBackPressed"]
+[connection signal="pressed" from="CreditsContainer/Back" to="." method="OnBackPressed"]

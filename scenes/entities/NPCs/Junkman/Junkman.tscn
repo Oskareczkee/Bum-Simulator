@@ -102,15 +102,15 @@ shape = SubResource("CircleShape2D_qavoi")
 
 [node name="DialogueStream" type="AudioStreamPlayer2D" parent="." unique_id=230653953]
 stream = ExtResource("4_mgscn")
-volume_db = -5.0
 max_distance = 400.0
 attenuation = 3.0
+bus = &"Dialogue"
 
 [node name="AnvilHit" type="AudioStreamPlayer2D" parent="." unique_id=682479740]
 stream = ExtResource("5_s04lk")
-volume_db = -20.0
 pitch_scale = 0.9
 autoplay = true
 max_distance = 500.0
 attenuation = 3.0
+bus = &"SFX"
 parameters/looping = true

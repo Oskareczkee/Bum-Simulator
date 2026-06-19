@@ -2045,7 +2045,11 @@ tile_map_data = PackedByteArray("AABYAFUAAAAAAAAAAABxAEgAAAAAAAAAAACEADwAAAAAAAA
 tile_set = SubResource("TileSet_h3x7n")
 
 [node name="Player" parent="SCENE" unique_id=1194532292 instance=ExtResource("18_w1275")]
+<<<<<<< HEAD
 position = Vector2(1881, 1446)
+=======
+position = Vector2(553, 266)
+>>>>>>> 9b38bf3566fe95d3b91884555c1cecd4e182708f
 
 [node name="TestNpc" parent="SCENE" unique_id=362253245 instance=ExtResource("19_psblk")]
 position = Vector2(57, 106)
@@ -2056,6 +2060,6 @@ tile_set = SubResource("TileSet_1pmgp")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=497596355]
 stream = ExtResource("20_eiuue")
-volume_db = -40.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true

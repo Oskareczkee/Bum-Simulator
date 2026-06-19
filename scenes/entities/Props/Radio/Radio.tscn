@@ -68,6 +68,7 @@ shape = SubResource("CircleShape2D_n0r6o")
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1370426270]
 autoplay = true
 attenuation = 3.0
+bus = &"SFX"
 
 [node name="FlyingNote" type="Sprite2D" parent="." unique_id=188917127]
 position = Vector2(2.610313, -159.2291)

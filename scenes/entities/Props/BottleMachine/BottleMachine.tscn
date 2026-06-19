@@ -101,5 +101,5 @@ shape = SubResource("CircleShape2D_r3o88")
 
 [node name="OpenSound" type="AudioStreamPlayer2D" parent="." unique_id=1208367565]
 stream = ExtResource("4_eq5e2")
-volume_db = -20.0
 pitch_scale = 0.8
+bus = &"SFX"

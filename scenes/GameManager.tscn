@@ -4,8 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://c7f88wb67ieul" path="res://scenes/ui/main menu/MainMenu.tscn" id="2_4dhvd"]
 [ext_resource type="PackedScene" uid="uid://6rralnnr3wx7" path="res://scenes/ui/game over/EndGameScreen.tscn" id="3_1jauj"]
 [ext_resource type="PackedScene" uid="uid://bc7u533fij8o0" path="res://scenes/maps/Start/Test.tscn" id="3_4dhvd"]
-[ext_resource type="PackedScene" uid="uid://c4mcfgw0rfqco" path="res://scenes/ui/main menu/credits/Credits.tscn" id="5_4arur"]
+[ext_resource type="PackedScene" uid="uid://c4mcfgw0rfqco" path="res://scenes/ui/credits/Credits.tscn" id="5_4arur"]
+[ext_resource type="PackedScene" uid="uid://cbk7h8xr7ol4w" path="res://scenes/ui/settings/Settings.tscn" id="6_1jauj"]
 [ext_resource type="PackedScene" uid="uid://c2pa8swvoejjv" path="res://scenes/ui/hud/hud.tscn" id="6_mx40s"]
+[ext_resource type="PackedScene" uid="uid://da1oeclfx8nl1" path="res://scenes/ui/pause/PauseMenu.tscn" id="7_biy4i"]
 [ext_resource type="PackedScene" uid="uid://cmkpe3suyg2pd" path="res://scenes/AudioManager.tscn" id="8_2uts2"]
 [ext_resource type="Shader" uid="uid://cq82x2wjsjsfc" path="res://shaders/CircleTransition.gdshader" id="9_2chjq"]
 [ext_resource type="PackedScene" uid="uid://dhrcjabv6p5a2" path="res://scenes/UIAudioManager.tscn" id="11_biy4i"]
@@ -74,6 +76,8 @@ MainMenuScene = ExtResource("2_4dhvd")
 GameOverScreen = ExtResource("3_1jauj")
 GameScene = ExtResource("3_4dhvd")
 CreditsScene = ExtResource("5_4arur")
+SettingsScene = ExtResource("6_1jauj")
+PauseScene = ExtResource("7_biy4i")
 
 [node name="CurrentScene" type="Node" parent="." unique_id=1096754491]
 

@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://cbk7h8xr7ol4w"]
+
+[ext_resource type="Script" uid="uid://on0ngd2qbvgh" path="res://scenes/ui/settings/Settings.cs" id="1_7oi5m"]
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="2_wyiwp"]
+[ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="3_5srx6"]
+[ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="4_avf5j"]
+[ext_resource type="Texture2D" uid="uid://dewmswvc3dkad" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Hover.png" id="5_r5qds"]
+
+[node name="Settings" type="Control" unique_id=591354386]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7oi5m")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=481971858]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.4862745)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=492310854]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="SettingsContainer" type="VBoxContainer" parent="MarginContainer" unique_id=341772730]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+
+[node name="MasterVolume" type="HBoxContainer" parent="MarginContainer/SettingsContainer" unique_id=969565617]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+
+[node name="MasterVolumeLabel" type="Label" parent="MarginContainer/SettingsContainer/MasterVolume" unique_id=1982308169]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "Master Volume"
+horizontal_alignment = 1
+
+[node name="MasterVolumeSlider" type="HSlider" parent="MarginContainer/SettingsContainer/MasterVolume" unique_id=1206536757]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="MasterVolumeValue" type="Label" parent="MarginContainer/SettingsContainer/MasterVolume" unique_id=1574179659]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "99%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MusicVolume" type="HBoxContainer" parent="MarginContainer/SettingsContainer" unique_id=1358572120]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+
+[node name="MusicVolumeLabel" type="Label" parent="MarginContainer/SettingsContainer/MusicVolume" unique_id=1895333662]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "Music Volume"
+horizontal_alignment = 1
+
+[node name="MusicVolumeSlider" type="HSlider" parent="MarginContainer/SettingsContainer/MusicVolume" unique_id=541121219]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="MusicVolumeValue" type="Label" parent="MarginContainer/SettingsContainer/MusicVolume" unique_id=325586265]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "99%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXVolume" type="HBoxContainer" parent="MarginContainer/SettingsContainer" unique_id=849777528]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+
+[node name="SFXVolumeLabel" type="Label" parent="MarginContainer/SettingsContainer/SFXVolume" unique_id=1994953059]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "SFX Volume"
+horizontal_alignment = 1
+
+[node name="SFXVolumeSlider" type="HSlider" parent="MarginContainer/SettingsContainer/SFXVolume" unique_id=1066668892]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="SFXVolumeValue" type="Label" parent="MarginContainer/SettingsContainer/SFXVolume" unique_id=139430081]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "99%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialogueVolume" type="HBoxContainer" parent="MarginContainer/SettingsContainer" unique_id=1743516313]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 40
+
+[node name="DialogueVolumeLabel" type="Label" parent="MarginContainer/SettingsContainer/DialogueVolume" unique_id=1386176917]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "Dialogue Volume"
+horizontal_alignment = 1
+
+[node name="DialogueVolumeSlider" type="HSlider" parent="MarginContainer/SettingsContainer/DialogueVolume" unique_id=1405512415]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="DialogueVolumeValue" type="Label" parent="MarginContainer/SettingsContainer/DialogueVolume" unique_id=2089041248]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "99%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="TextureButton" parent="MarginContainer/SettingsContainer" unique_id=1299636145]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_5srx6")
+texture_pressed = ExtResource("4_avf5j")
+texture_hover = ExtResource("5_r5qds")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="MarginContainer/SettingsContainer/Back" unique_id=569310672]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("2_wyiwp")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="value_changed" from="MarginContainer/SettingsContainer/MasterVolume/MasterVolumeSlider" to="." method="OnMasterVolumeChanged"]
+[connection signal="value_changed" from="MarginContainer/SettingsContainer/MusicVolume/MusicVolumeSlider" to="." method="OnMusicVolumeChanged"]
+[connection signal="value_changed" from="MarginContainer/SettingsContainer/SFXVolume/SFXVolumeSlider" to="." method="OnSFXVolumeChanged"]
+[connection signal="value_changed" from="MarginContainer/SettingsContainer/DialogueVolume/DialogueVolumeSlider" to="." method="OnDialogueVolumeChanged"]
+[connection signal="pressed" from="MarginContainer/SettingsContainer/Back" to="." method="OnBackPressed"]

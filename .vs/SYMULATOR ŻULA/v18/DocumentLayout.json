@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "P:\\symulator-\u017Cula\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\symulator-\u017Cula\\scenes\\entities\\Props\\Radio\\Radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\entities\\Props\\Radio\\Radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\interaction_components\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:interaction_components\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\entities\\props\\trashcan\\trashcanscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\props\\trashcan\\trashcanscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\symulator-\u017Cula\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\buildings\\FrogShop\\FrogShopBuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Interactable.cs",
+              "DocumentMoniker": "P:\\symulator-\u017Cula\\interaction_components\\Interactable.cs",
+              "RelativeDocumentMoniker": "interaction_components\\Interactable.cs",
+              "ToolTip": "P:\\symulator-\u017Cula\\interaction_components\\Interactable.cs",
+              "RelativeToolTip": "interaction_components\\Interactable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T15:04:27.995Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -42,7 +67,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "TrashCanScript.cs",
+              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\entities\\Props\\TrashCan\\TrashCanScript.cs",
+              "RelativeDocumentMoniker": "scenes\\entities\\Props\\TrashCan\\TrashCanScript.cs",
+              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\entities\\Props\\TrashCan\\TrashCanScript.cs",
+              "RelativeToolTip": "scenes\\entities\\Props\\TrashCan\\TrashCanScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T14:55:41.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Radio.cs",
+              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\entities\\Props\\Radio\\Radio.cs",
+              "RelativeDocumentMoniker": "scenes\\entities\\Props\\Radio\\Radio.cs",
+              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\entities\\Props\\Radio\\Radio.cs",
+              "RelativeToolTip": "scenes\\entities\\Props\\Radio\\Radio.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T14:46:28.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerData.cs",
               "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\PlayerData.cs",
               "RelativeDocumentMoniker": "scenes\\PlayerData.cs",
@@ -50,25 +100,23 @@
               "RelativeToolTip": "scenes\\PlayerData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T13:42:06.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T13:42:06.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\entities\\Player\\PlayerScript.cs",
               "RelativeDocumentMoniker": "scenes\\entities\\Player\\PlayerScript.cs",
               "ToolTip": "P:\\symulator-\u017Cula\\scenes\\entities\\Player\\PlayerScript.cs",
               "RelativeToolTip": "scenes\\entities\\Player\\PlayerScript.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T11:27:54.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-18T11:27:54.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "GameManager.cs",
               "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
               "RelativeDocumentMoniker": "scenes\\GameManager.cs",
@@ -80,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FrogShopBuilding.cs",
               "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
               "RelativeDocumentMoniker": "scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",

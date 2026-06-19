@@ -7,6 +7,7 @@ public partial class Interactable : Area2D
 	[Export] public bool IsInteractable = true;
 
 	public Action Interact { get; set; } = null;
+
 	public override void _Ready(){}
 	public override void _Process(double delta){}
 }

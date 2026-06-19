@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://da1oeclfx8nl1"]
+
+[ext_resource type="FontFile" uid="uid://dci4imvxqjpju" path="res://scenes/ui/main menu/sprites/PirataOne-Regular.ttf" id="1_6234s"]
+[ext_resource type="Script" uid="uid://dlybyaigd7gwj" path="res://scenes/ui/pause/PauseMenu.cs" id="1_tejew"]
+[ext_resource type="Texture2D" uid="uid://bhmepj3540tpo" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Regular.png" id="2_tejew"]
+[ext_resource type="Texture2D" uid="uid://cjrgsqihgfkk2" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Pressed.png" id="3_db3bf"]
+[ext_resource type="Texture2D" uid="uid://dewmswvc3dkad" path="res://scenes/ui/main menu/sprites/SmallBlueSquareButton_Hover.png" id="4_gvmwl"]
+
+[node name="PauseMenu" type="Control" unique_id=316536606]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tejew")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1201470098]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -3.0
+offset_right = -7.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.4862745)
+
+[node name="VContainer" type="VBoxContainer" parent="." unique_id=1981937286]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -679.0
+offset_top = -540.0
+offset_right = 679.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Label" type="Label" parent="VContainer" unique_id=41556579]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_6234s")
+theme_override_font_sizes/font_size = 80
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VContainer" unique_id=767788553]
+layout_mode = 2
+
+[node name="Continue" type="TextureButton" parent="VContainer/HBoxContainer" unique_id=1533979154]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_tejew")
+texture_pressed = ExtResource("3_db3bf")
+texture_hover = ExtResource("4_gvmwl")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VContainer/HBoxContainer/Continue" unique_id=1060824815]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_6234s")
+theme_override_font_sizes/font_size = 50
+text = "Continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="VContainer/HBoxContainer" unique_id=1306929459]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_tejew")
+texture_pressed = ExtResource("3_db3bf")
+texture_hover = ExtResource("4_gvmwl")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VContainer/HBoxContainer/Settings" unique_id=1165748651]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_6234s")
+theme_override_font_sizes/font_size = 50
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenu" type="TextureButton" parent="VContainer/HBoxContainer" unique_id=718733938]
+custom_minimum_size = Vector2(450, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_tejew")
+texture_pressed = ExtResource("3_db3bf")
+texture_hover = ExtResource("4_gvmwl")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VContainer/HBoxContainer/MainMenu" unique_id=512915889]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 21.0
+offset_right = 385.0
+offset_bottom = 129.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("1_6234s")
+theme_override_font_sizes/font_size = 50
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="VContainer" unique_id=1212758365]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[connection signal="pressed" from="VContainer/HBoxContainer/Continue" to="." method="OnContinuePressed"]
+[connection signal="pressed" from="VContainer/HBoxContainer/Settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="VContainer/HBoxContainer/MainMenu" to="." method="OnMainMenuPressed"]

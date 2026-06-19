@@ -2019,7 +2019,7 @@ tile_set = ExtResource("11_n2ecl")
 tile_set = SubResource("TileSet_h3x7n")
 
 [node name="Player" parent="SCENE" unique_id=1194532292 instance=ExtResource("18_w1275")]
-position = Vector2(3365, 2583)
+position = Vector2(553, 266)
 
 [node name="TestNpc" parent="SCENE" unique_id=362253245 instance=ExtResource("19_psblk")]
 position = Vector2(57, 106)
@@ -2030,6 +2030,6 @@ tile_set = SubResource("TileSet_1pmgp")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=497596355]
 stream = ExtResource("20_eiuue")
-volume_db = -40.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true

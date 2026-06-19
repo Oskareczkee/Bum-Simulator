@@ -289,4 +289,4 @@ sprite_frames = SubResource("SpriteFrames_rosbm")
 
 [node name="Sound" type="AudioStreamPlayer" parent="Effects/HealEffect" unique_id=2036669737]
 stream = ExtResource("7_dkcey")
-volume_db = -20.0
+bus = &"SFX"

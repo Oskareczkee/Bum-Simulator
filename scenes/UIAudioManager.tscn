@@ -9,9 +9,9 @@ script = ExtResource("1_tnkv4")
 
 [node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=1964348113]
 stream = ExtResource("2_avxo2")
-volume_db = -20.0
+bus = &"SFX"
 
 [node name="ButtonHover" type="AudioStreamPlayer" parent="." unique_id=715268773]
 stream = ExtResource("3_avxo2")
-volume_db = -20.0
 pitch_scale = 0.75
+bus = &"SFX"

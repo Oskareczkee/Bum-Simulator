@@ -5,6 +5,7 @@ public partial class PlayerData : Node
 {
     public static PlayerData Instance { get; private set; }
 
+    public double Intoxication = 400.0f;
     public int MetalCans { get; set; } = 5;
     public int GlassBottles { get; set; } = 5;
     public float Money { get; set; } = 0.0f;

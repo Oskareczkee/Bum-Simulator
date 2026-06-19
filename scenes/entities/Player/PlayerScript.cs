@@ -14,7 +14,6 @@ public partial class PlayerScript : CharacterBody2D
 
     public const double intoxicationLossPerMinute = 40.0f;
     public const double maxIntoxication = 400.0f;
-    public double intoxication = 400.0f;
 
 	public const double beerIntoxicationPoints = 50.0f;
 
@@ -28,8 +27,6 @@ public partial class PlayerScript : CharacterBody2D
 		_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
 		Effects = GetNode<Node>("Effects");
-
-        intoxication = maxIntoxication;
 
 		UpdateIntoxicationBar += HUD.UpdateIntoxicationBar;
 		UpdateBeerCounter += HUD.UpdateBeer;
@@ -58,7 +55,7 @@ public partial class PlayerScript : CharacterBody2D
     public override void _Input(InputEvent @event)
     {
 		//this -10 prevents healing when player has too much intoxication
-		if (@event.IsActionPressed("heal") && intoxication < maxIntoxication  + 10 && PlayerData.Instance.Beer > 0)
+		if (@event.IsActionPressed("heal") && PlayerData.Instance.Intoxication < maxIntoxication  + 10 && PlayerData.Instance.Beer > 0)
 		{
 			_state = PlayerState.HEAL;
 
@@ -66,11 +63,11 @@ public partial class PlayerScript : CharacterBody2D
 			PlayEffect("HealEffect");
 
 			PlayerData.Instance.Beer--;
-			intoxication += beerIntoxicationPoints;
+            PlayerData.Instance.Intoxication += beerIntoxicationPoints;
 
-			if (intoxication > maxIntoxication) intoxication = maxIntoxication;
+			if (PlayerData.Instance.Intoxication > maxIntoxication) PlayerData.Instance.Intoxication = maxIntoxication;
 
-			EmitSignal(SignalName.UpdateIntoxicationBar, intoxication);
+			EmitSignal(SignalName.UpdateIntoxicationBar, PlayerData.Instance.Intoxication);
 			EmitSignal(SignalName.UpdateBeerCounter, PlayerData.Instance.Beer);
 		}
     }
@@ -159,14 +156,14 @@ public partial class PlayerScript : CharacterBody2D
 
 	private void UpdateIntoxication(double delta)
 	{
-		if (intoxication == 0) return; //prevent calling this too much after emitting signal
+		if (PlayerData.Instance.Intoxication == 0) return; //prevent calling this too much after emitting signal
 
-		intoxication -= (intoxicationLossPerMinute / 60.0d) * delta;
-		if(intoxication < 0) intoxication = 0;
+        PlayerData.Instance.Intoxication -= (intoxicationLossPerMinute / 60.0d) * delta;
+		if(PlayerData.Instance.Intoxication < 0) PlayerData.Instance.Intoxication = 0;
 
-		EmitSignal(SignalName.UpdateIntoxicationBar, (intoxication * 100) / maxIntoxication);
+		EmitSignal(SignalName.UpdateIntoxicationBar, (PlayerData.Instance.Intoxication * 100) / maxIntoxication);
 
-		if (intoxication == 0)
+		if (PlayerData.Instance.Intoxication == 0)
 			Death();
 	}
 

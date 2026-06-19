@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "P:\\symulator-\u017Cula\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\entities\\npcs\\junkman\\junkman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\npcs\\junkman\\junkman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\bottlemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:bottlemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\uiaudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\uiaudiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\ui\\hud\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\hud\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\interaction_components\\interactingcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:interaction_components\\interactingcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,86 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Junkman.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
-              "RelativeDocumentMoniker": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
-              "RelativeToolTip": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T17:16:25.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BottleMachine.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\BottleMachine.cs",
-              "RelativeDocumentMoniker": "BottleMachine.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\BottleMachine.cs",
-              "RelativeToolTip": "BottleMachine.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T17:10:57.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
-              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
-              "RelativeToolTip": "scenes\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T17:09:21.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AudioManager.cs",
-              "DocumentMoniker": "P:\\SYMULATOR-\u017BULA\\scenes\\AudioManager.cs",
-              "RelativeDocumentMoniker": "scenes\\AudioManager.cs",
-              "ToolTip": "P:\\SYMULATOR-\u017BULA\\scenes\\AudioManager.cs",
-              "RelativeToolTip": "scenes\\AudioManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T17:07:05.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UIAudioManager.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\UIAudioManager.cs",
-              "RelativeDocumentMoniker": "scenes\\UIAudioManager.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\UIAudioManager.cs",
-              "RelativeToolTip": "scenes\\UIAudioManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T17:05:41.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Hud.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\ui\\hud\\Hud.cs",
-              "RelativeDocumentMoniker": "scenes\\ui\\hud\\Hud.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\ui\\hud\\Hud.cs",
-              "RelativeToolTip": "scenes\\ui\\hud\\Hud.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T16:55:39.541Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -136,28 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\entities\\Player\\PlayerScript.cs",
               "RelativeDocumentMoniker": "scenes\\entities\\Player\\PlayerScript.cs",
               "ToolTip": "P:\\symulator-\u017Cula\\scenes\\entities\\Player\\PlayerScript.cs",
               "RelativeToolTip": "scenes\\entities\\Player\\PlayerScript.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T16:52:26.021Z",
+              "WhenOpened": "2026-06-18T11:27:54.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InteractingComponent.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\interaction_components\\InteractingComponent.cs",
-              "RelativeDocumentMoniker": "interaction_components\\InteractingComponent.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\interaction_components\\InteractingComponent.cs",
-              "RelativeToolTip": "interaction_components\\InteractingComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
+              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
+              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
+              "RelativeToolTip": "scenes\\GameManager.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAASwJIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T16:52:25.118Z",
+              "WhenOpened": "2026-06-18T10:34:01.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrogShopBuilding.cs",
+              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "RelativeDocumentMoniker": "scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "RelativeToolTip": "scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T10:25:15.869Z",
               "EditorCaption": ""
             }
           ]

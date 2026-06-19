@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://djhbiyy8pvthi"]
 
-[ext_resource type="Script" uid="uid://c3oxx0bv00arg" path="res://BottleMachine.cs" id="1_td0m4"]
+[ext_resource type="Script" uid="uid://c3oxx0bv00arg" path="res://scenes/entities/Props/BottleMachine/BottleMachine.cs" id="1_td0m4"]
 [ext_resource type="Texture2D" uid="uid://c6vqlvqsgpmm8" path="res://scenes/entities/Props/BottleMachine/cabinet01-on.png" id="2_dfg4s"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_do4a6"]
 [ext_resource type="AudioStream" uid="uid://cfxbfd4j4wfdf" path="res://scenes/entities/Props/TrashCan/TrashCanSound.mp3" id="4_eq5e2"]

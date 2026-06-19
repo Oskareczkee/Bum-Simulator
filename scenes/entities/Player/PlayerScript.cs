@@ -1,6 +1,6 @@
 using Godot;
 
-public enum PlayerState { IDLE, RUN };
+public enum PlayerState { IDLE, RUN, HEAL };
 
 public partial class PlayerScript : CharacterBody2D
 {
@@ -19,6 +19,7 @@ public partial class PlayerScript : CharacterBody2D
 	public const double beerIntoxicationPoints = 50.0f;
 
     private AnimatedSprite2D _sprite;
+	private Node Effects;
 	private PlayerState _state = PlayerState.IDLE;
 	public override void _Ready()
 	{
@@ -26,12 +27,23 @@ public partial class PlayerScript : CharacterBody2D
 
 		_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
+		Effects = GetNode<Node>("Effects");
+
         intoxication = maxIntoxication;
 
 		UpdateIntoxicationBar += HUD.UpdateIntoxicationBar;
 		UpdateBeerCounter += HUD.UpdateBeer;
 
         GameOver += DisplayGameOver;
+
+		SetupEffects();
+
+		//wiecej animacji nie bedzie i nie chce mi sie specjalnie kobminowac, to dziala i jest gitarka
+		_sprite.AnimationFinished += () =>
+		{
+			if (_sprite.Animation == "heal")
+				_state= PlayerState.IDLE;
+		};
     }
 
 	public override void _PhysicsProcess(double delta)
@@ -46,8 +58,13 @@ public partial class PlayerScript : CharacterBody2D
     public override void _Input(InputEvent @event)
     {
 		//this -10 prevents healing when player has too much intoxication
-		if (@event.IsActionPressed("heal") && intoxication < maxIntoxication - 10 && PlayerData.Instance.Beer > 0)
+		if (@event.IsActionPressed("heal") && intoxication < maxIntoxication  + 10 && PlayerData.Instance.Beer > 0)
 		{
+			_state = PlayerState.HEAL;
+
+			_sprite.Play("heal");
+			PlayEffect("HealEffect");
+
 			PlayerData.Instance.Beer--;
 			intoxication += beerIntoxicationPoints;
 
@@ -78,6 +95,9 @@ public partial class PlayerScript : CharacterBody2D
 
 	private void AnimationLoop()
 	{
+		//player is currently healing
+		if (_state == PlayerState.HEAL && _sprite.IsPlaying()) return;
+
 		if(Velocity != Vector2.Zero && _state == PlayerState.IDLE)
 			_state = PlayerState.RUN;
 		else if(Velocity == Vector2.Zero && _state == PlayerState.RUN)
@@ -87,7 +107,7 @@ public partial class PlayerScript : CharacterBody2D
 	private void UpdateAnimation()
 	{
 		//flip player sprite properly
-		if (_state == PlayerState.RUN || _state == PlayerState.IDLE)
+		if (_state == PlayerState.RUN || _state == PlayerState.IDLE || _state == PlayerState.HEAL)
 		{
 			if (Velocity.X < -0.01)
 				_sprite.FlipH = true;
@@ -103,7 +123,30 @@ public partial class PlayerScript : CharacterBody2D
 			case PlayerState.RUN:
 				_sprite.Play("run");
 				break;
+			case PlayerState.HEAL:
+				//set in input event, to prevent looping
+				break;
 		}
+	}
+
+	private void SetupEffects()
+	{
+		foreach(var effect in GetNode<Node2D>("Effects").GetChildren())
+		{
+			//hide effect when it finishes playing
+			if (effect is AnimatedSprite2D effectSprite)
+				effectSprite.AnimationFinished += () => effectSprite.Visible = false;
+		}
+	}
+
+	private void PlayEffect(string effectName)
+	{
+		AnimatedSprite2D EffectPlayer = GetNode<AnimatedSprite2D>($"Effects/{effectName}");
+		AudioStreamPlayer Sound = EffectPlayer.GetNode<AudioStreamPlayer>("Sound");
+		EffectPlayer.Visible = true;
+
+		EffectPlayer.Play("default");
+		Sound.Play();
 	}
 
 	private async void Death()

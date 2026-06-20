@@ -3,7 +3,7 @@ using System;
 
 public partial class BottleMachine : StaticBody2D
 {
-    [Signal] public delegate void UpdateMoneyCounterEventHandler(float newValue);
+    [Signal] public delegate void UpdateMoneyCounterEventHandler(double newValue);
     [Signal] public delegate void UpdateGlassBottlesCounterEventHandler(int newValue);
 
     private Interactable Interactable;
@@ -28,7 +28,10 @@ public partial class BottleMachine : StaticBody2D
     {
 
         if (PlayerData.Instance.GlassBottles == 0)
-            return; //Add reject sound
+        {
+            AudioManager.PlayRejectSound();
+            return;
+        }
 
         PlayerData.Instance.GlassBottles--;
         PlayerData.Instance.Money += 1.0f;

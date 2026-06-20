@@ -32,7 +32,7 @@ public partial class Hud : Control
         glassBottlesCounter.Text = newValue.ToString();
     }
 
-    public void UpdateMoney(float newValue)
+    public void UpdateMoney(double newValue)
     {
         moneyCounter.Text = newValue.ToString("F2");
     }

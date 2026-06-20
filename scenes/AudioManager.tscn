@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhk2bj8xg2nle" path="res://scenes/AudioManager.cs" id="1_kbnxs"]
 [ext_resource type="AudioStream" uid="uid://cgpuwrleo1g4w" path="res://assets/sounds/sell_sound.mp3" id="2_nma71"]
+[ext_resource type="AudioStream" uid="uid://dvfqprwfgravp" path="res://assets/sounds/reject_sound.mp3" id="3_4tesi"]
 
 [node name="AudioManger" type="Node" unique_id=1654488308]
 script = ExtResource("1_kbnxs")
@@ -9,4 +10,8 @@ script = ExtResource("1_kbnxs")
 [node name="SellSound" type="AudioStreamPlayer" parent="." unique_id=1585668472]
 stream = ExtResource("2_nma71")
 max_polyphony = 5
+bus = &"SFX"
+
+[node name="RejectSound" type="AudioStreamPlayer" parent="." unique_id=759417451]
+stream = ExtResource("3_4tesi")
 bus = &"SFX"

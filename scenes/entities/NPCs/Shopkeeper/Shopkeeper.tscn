@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://5eefaoibcpam"]
+
+[ext_resource type="Texture2D" uid="uid://daank31l7ibpe" path="res://scenes/entities/NPCs/TestNPC/Warrior_Idle.png" id="1_h35v5"]
+[ext_resource type="Script" uid="uid://byuoj8ctr6fcl" path="res://scenes/entities/NPCs/Shopkeeper/Shopkeeper.cs" id="1_u3drq"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="2_u3drq"]
+[ext_resource type="AudioStream" uid="uid://5mk51b3v57xk" path="res://scenes/entities/NPCs/Shopkeeper/ShopkeeperDialogue.mp3" id="4_u3drq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iq4rx"]
+radius = 53.600372
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmcgl"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igu3x"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u8c8"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t10ic"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih0km"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74ksa"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqlas"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la45j"]
+atlas = ExtResource("1_h35v5")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dgpad"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmcgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igu3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6u8c8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t10ic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih0km")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74ksa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqlas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_la45j")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dfj4w"]
+radius = 115.62439
+
+[node name="Shopkeeper" type="StaticBody2D" unique_id=471522225]
+script = ExtResource("1_u3drq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=997343191]
+shape = SubResource("CircleShape2D_iq4rx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=989452590]
+sprite_frames = SubResource("SpriteFrames_dgpad")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("2_u3drq")]
+InteractName = "(E) Buy Beer (5 Gold)"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=498379325]
+position = Vector2(3, -1)
+shape = SubResource("CircleShape2D_dfj4w")
+
+[node name="DialogueStream" type="AudioStreamPlayer2D" parent="." unique_id=1635911013]
+stream = ExtResource("4_u3drq")
+max_distance = 400.0
+attenuation = 3.0
+bus = &"Dialogue"

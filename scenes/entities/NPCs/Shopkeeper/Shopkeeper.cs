@@ -1,12 +1,15 @@
 using Godot;
 using System;
 
-public partial class Junkman : StaticBody2D
+public partial class Shopkeeper : StaticBody2D
 {
-    [Signal] public delegate void UpdateMetalCansCounterEventHandler(int newValue);
+    [Signal] public delegate void UpdateBeerCounterEventHandler(int newValue);
     [Signal] public delegate void UpdateMoneyCounterEventHandler(double newValue);
 
+    private const double BeerPrice = 5.0f;
+
     private Interactable Interactable;
+    private AnimatedSprite2D Sprite2D;
     private AudioStreamPlayer2D DialogueStream;
     private AudioManager AudioManager;
     private Hud HUD;
@@ -15,35 +18,34 @@ public partial class Junkman : StaticBody2D
     public override void _Ready()
     {
         Interactable = GetNode<Interactable>("Interactable");
+        Sprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         DialogueStream = GetNode<AudioStreamPlayer2D>("DialogueStream");
-        HUD = GetNode<Control>("/root/GameManager/UI/HUD") as Hud;
         AudioManager = GetNode<AudioManager>("/root/GameManager/AudioManager");
+        HUD = GetNode<Hud>("/root/GameManager/UI/HUD");
 
         Interactable.Interact += OnInteract;
-        UpdateMetalCansCounter += HUD.UpdateMetalCans;
+        UpdateBeerCounter += HUD.UpdateBeer;
         UpdateMoneyCounter += HUD.UpdateMoney;
     }
 
     private void OnInteract()
     {
-
         if (!DialogueStream.Playing)
             DialogueStream.Play();
 
-        if (PlayerData.Instance.MetalCans == 0)
+        if (PlayerData.Instance.Money < BeerPrice)
         {
             AudioManager.PlayRejectSound();
             return;
         }
 
-        PlayerData.Instance.MetalCans--;
-        PlayerData.Instance.Money += 0.50f;
-
-        EmitSignal(SignalName.UpdateMetalCansCounter, PlayerData.Instance.MetalCans);
-        EmitSignal(SignalName.UpdateMoneyCounter, PlayerData.Instance.Money);
-
+        PlayerData.Instance.Money -= BeerPrice;
+        PlayerData.Instance.Beer++;
         AudioManager.PlaySellSound();
+
+        EmitSignal(SignalName.UpdateBeerCounter, PlayerData.Instance.Beer);
+        EmitSignal(SignalName.UpdateMoneyCounter, PlayerData.Instance.Money);
     }
 
-    public override void _Process(double delta){}
+    public override void _Process(double delta) { }
 }

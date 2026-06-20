@@ -1,26 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "P:\\symulator-\u017Cula\\",
+  "WorkspaceRootPath": "P:\\Bum-Simulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\entities\\npcs\\shopkeeper\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\npcs\\shopkeeper\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\entities\\props\\bottlemachine\\bottlemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\props\\bottlemachine\\bottlemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\entities\\npcs\\junkman\\junkman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\npcs\\junkman\\junkman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\hud\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\hud\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\symulator-\u017Cula\\scenes\\ui\\pause\\PauseMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\pause\\PauseMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\symulator-\u017Cula\\scenes\\ui\\settings\\Settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\settings\\Settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\ui\\main menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\main menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\main menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\symulator-\u017Cula\\scenes\\ui\\credits\\credits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\credits\\credits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\credits\\credits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\pause\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\pause\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\settings\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\ui\\settings\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,68 +74,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Credits.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\ui\\credits\\Credits.cs",
-              "RelativeDocumentMoniker": "scenes\\ui\\credits\\Credits.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\ui\\credits\\Credits.cs",
-              "RelativeToolTip": "scenes\\ui\\credits\\Credits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Shopkeeper.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
+              "RelativeDocumentMoniker": "scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
+              "RelativeToolTip": "scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T22:28:03.815Z",
+              "WhenOpened": "2026-06-20T21:10:37.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PauseMenu.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\ui\\pause\\PauseMenu.cs",
-              "RelativeDocumentMoniker": "scenes\\ui\\pause\\PauseMenu.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\ui\\pause\\PauseMenu.cs",
-              "RelativeToolTip": "scenes\\ui\\pause\\PauseMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Title": "BottleMachine.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
+              "RelativeDocumentMoniker": "scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
+              "RelativeToolTip": "scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T20:31:40.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
-              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\GameManager.cs",
-              "RelativeToolTip": "scenes\\GameManager.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAAAIEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T19:42:05.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\ui\\main menu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "scenes\\ui\\main menu\\MainMenu.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\ui\\main menu\\MainMenu.cs",
-              "RelativeToolTip": "scenes\\ui\\main menu\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T19:40:54.926Z",
+              "WhenOpened": "2026-06-20T21:04:00.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Junkman.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
+              "RelativeDocumentMoniker": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
+              "RelativeToolTip": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T21:02:16.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\PlayerData.cs",
+              "RelativeDocumentMoniker": "scenes\\PlayerData.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\PlayerData.cs",
+              "RelativeToolTip": "scenes\\PlayerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T21:00:53.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hud.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\hud\\Hud.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\hud\\Hud.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\hud\\Hud.cs",
+              "RelativeToolTip": "scenes\\ui\\hud\\Hud.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T20:59:15.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\AudioManager.cs",
+              "RelativeDocumentMoniker": "scenes\\AudioManager.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\AudioManager.cs",
+              "RelativeToolTip": "scenes\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T20:58:11.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrogShop.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\maps\\FrogShop\\FrogShop.cs",
+              "RelativeDocumentMoniker": "scenes\\maps\\FrogShop\\FrogShop.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\maps\\FrogShop\\FrogShop.cs",
+              "RelativeToolTip": "scenes\\maps\\FrogShop\\FrogShop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T20:56:32.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Credits.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\credits\\Credits.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
+              "RelativeToolTip": "scenes\\ui\\credits\\Credits.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T22:28:03.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\pause\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\pause\\PauseMenu.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\pause\\PauseMenu.cs",
+              "RelativeToolTip": "scenes\\ui\\pause\\PauseMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T20:31:40.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
+              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
+              "RelativeToolTip": "scenes\\GameManager.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T19:42:05.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\main menu\\MainMenu.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\main menu\\MainMenu.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\main menu\\MainMenu.cs",
+              "RelativeToolTip": "scenes\\ui\\main menu\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T19:40:54.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Settings.cs",
-              "DocumentMoniker": "P:\\symulator-\u017Cula\\scenes\\ui\\settings\\Settings.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\settings\\Settings.cs",
               "RelativeDocumentMoniker": "scenes\\ui\\settings\\Settings.cs",
-              "ToolTip": "P:\\symulator-\u017Cula\\scenes\\ui\\settings\\Settings.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\settings\\Settings.cs",
               "RelativeToolTip": "scenes\\ui\\settings\\Settings.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T19:13:03.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T19:13:03.029Z"
             }
           ]
         }

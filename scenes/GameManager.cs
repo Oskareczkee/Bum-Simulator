@@ -201,9 +201,24 @@ public partial class GameManager : Node
     {
         await PlayCloseTransition();
         await ClearCurrentScene();
+        await ClearEverything();
 
         var sceneInstance = scene.Instantiate();
         CurrentScene.AddChild(sceneInstance);
+
+        await PlayOpenTransition();
+    }
+
+    public async void ChangeCurrentSceneAndTeleportPlayerToLastKnownPosition(PackedScene scene)
+    {
+        await PlayCloseTransition();
+        await ClearCurrentScene();
+
+        var sceneInstance = scene.Instantiate();
+        CurrentScene.AddChild(sceneInstance);
+
+        var Player = sceneInstance.GetNode<PlayerScript>("%Player");
+        Player.Position = PlayerData.Instance.PositionBeforeSceneChange;
 
         await PlayOpenTransition();
     }

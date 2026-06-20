@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "P:\\Bum-Simulator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\buildings\\frogshop\\frogshopbuilding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\interaction_components\\interactingcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:interaction_components\\interactingcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\entities\\npcs\\shopkeeper\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\entities\\npcs\\shopkeeper\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|solutionrelative:scenes\\maps\\frogshop\\frogshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8367888F-E263-4712-82B7-8698995AF9B4}|Symulator \u017Cula.csproj|p:\\bum-simulator\\scenes\\ui\\main menu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +66,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 280,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Credits.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\credits\\Credits.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
+              "RelativeToolTip": "scenes\\ui\\credits\\Credits.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T22:28:03.815Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -74,20 +95,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "FrogShopBuilding.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "RelativeDocumentMoniker": "scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "RelativeToolTip": "scenes\\buildings\\FrogShop\\FrogShopBuilding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T21:12:48.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Shopkeeper.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
               "RelativeDocumentMoniker": "scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
               "ToolTip": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
               "RelativeToolTip": "scenes\\entities\\NPCs\\Shopkeeper\\Shopkeeper.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwCEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T21:10:37.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T21:10:37.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BottleMachine.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
               "RelativeDocumentMoniker": "scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
@@ -95,12 +128,11 @@
               "RelativeToolTip": "scenes\\entities\\Props\\BottleMachine\\BottleMachine.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T21:04:00.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T21:04:00.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Junkman.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
               "RelativeDocumentMoniker": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
@@ -108,12 +140,11 @@
               "RelativeToolTip": "scenes\\entities\\NPCs\\Junkman\\Junkman.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T21:02:16.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T21:02:16.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerData.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\PlayerData.cs",
               "RelativeDocumentMoniker": "scenes\\PlayerData.cs",
@@ -125,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Hud.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\hud\\Hud.cs",
               "RelativeDocumentMoniker": "scenes\\ui\\hud\\Hud.cs",
@@ -137,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\AudioManager.cs",
               "RelativeDocumentMoniker": "scenes\\AudioManager.cs",
@@ -149,31 +180,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "FrogShop.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\maps\\FrogShop\\FrogShop.cs",
               "RelativeDocumentMoniker": "scenes\\maps\\FrogShop\\FrogShop.cs",
               "ToolTip": "P:\\Bum-Simulator\\scenes\\maps\\FrogShop\\FrogShop.cs",
               "RelativeToolTip": "scenes\\maps\\FrogShop\\FrogShop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T20:56:32.342Z"
+              "WhenOpened": "2026-06-20T20:56:32.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Credits.cs",
-              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
-              "RelativeDocumentMoniker": "scenes\\ui\\credits\\Credits.cs",
-              "ToolTip": "P:\\Bum-Simulator\\scenes\\ui\\credits\\Credits.cs",
-              "RelativeToolTip": "scenes\\ui\\credits\\Credits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
+              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
+              "ToolTip": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
+              "RelativeToolTip": "scenes\\GameManager.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwMsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T22:28:03.815Z"
+              "WhenOpened": "2026-06-19T19:42:05.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "InteractingComponent.cs",
+              "DocumentMoniker": "P:\\Bum-Simulator\\interaction_components\\InteractingComponent.cs",
+              "RelativeDocumentMoniker": "interaction_components\\InteractingComponent.cs",
+              "ToolTip": "P:\\Bum-Simulator\\interaction_components\\InteractingComponent.cs",
+              "RelativeToolTip": "interaction_components\\InteractingComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T21:22:26.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\pause\\PauseMenu.cs",
               "RelativeDocumentMoniker": "scenes\\ui\\pause\\PauseMenu.cs",
@@ -185,19 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
-              "RelativeDocumentMoniker": "scenes\\GameManager.cs",
-              "ToolTip": "P:\\Bum-Simulator\\scenes\\GameManager.cs",
-              "RelativeToolTip": "scenes\\GameManager.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T19:42:05.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\main menu\\MainMenu.cs",
               "RelativeDocumentMoniker": "scenes\\ui\\main menu\\MainMenu.cs",
@@ -209,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Settings.cs",
               "DocumentMoniker": "P:\\Bum-Simulator\\scenes\\ui\\settings\\Settings.cs",
               "RelativeDocumentMoniker": "scenes\\ui\\settings\\Settings.cs",

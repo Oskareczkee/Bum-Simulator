@@ -2056,6 +2056,6 @@ tile_set = SubResource("TileSet_1pmgp")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=497596355]
 stream = ExtResource("20_eiuue")
-volume_db = -40.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true

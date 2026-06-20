@@ -3,25 +3,20 @@ using System;
 
 public partial class FrogShop : Node2D
 {
-
-	private Interactable ExitInteraction;
 	private GameManager GameManager;
-
+	private Interactable ShopExit;
 
 	public override void _Ready()
 	{
-		ExitInteraction = GetNode<Interactable>("ExitInteraction");
 		GameManager = GetNode<GameManager>("/root/GameManager");
+		ShopExit = GetNode<Interactable>("ShopExit");
 
-		ExitInteraction.Interact += OnExit;
+		ShopExit.Interact += OnExit;
 	}
 
 	private void OnExit()
 	{
-		//if (LeaveToScene == null)
-		//	return;
-
-		//GameManager.ChangeCurrentSceneAndTeleportPlayerToLastKnownPosition(LeaveToScene);
+		GD.Print("Shop exit interacted");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

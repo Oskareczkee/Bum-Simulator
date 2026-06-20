@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bldupxnmoya03" path="res://scenes/buildings/FrogShop/FrogShopBuilding.cs" id="1_cnosb"]
 [ext_resource type="Texture2D" uid="uid://dam6bs0mptvqi" path="res://scenes/buildings/FrogShop/frog_shop.png" id="2_eair5"]
+[ext_resource type="PackedScene" uid="uid://b843ko2c6ctct" path="res://scenes/maps/FrogShop/FrogShop.tscn" id="2_l5a34"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_l5a34"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fefwi"]
@@ -9,6 +10,7 @@ radius = 113.0
 
 [node name="FrogShopBuilding" type="Node2D" unique_id=13769763]
 script = ExtResource("1_cnosb")
+GoToScene = ExtResource("2_l5a34")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=12970177]
 texture = ExtResource("2_eair5")

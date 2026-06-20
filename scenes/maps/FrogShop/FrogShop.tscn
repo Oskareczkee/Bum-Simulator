@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://b843ko2c6ctct"]
 
 [ext_resource type="PackedScene" uid="uid://8uk3vynv4btf" path="res://scenes/entities/Player/Player.tscn" id="1_7u6h6"]
+[ext_resource type="Script" uid="uid://cqs06udh6maic" path="res://scenes/maps/FrogShop/FrogShop.cs" id="1_a2lv0"]
 [ext_resource type="PackedScene" uid="uid://5eefaoibcpam" path="res://scenes/entities/NPCs/Shopkeeper/Shopkeeper.tscn" id="2_7u6h6"]
+[ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_ss6ad"]
+[ext_resource type="AudioStream" uid="uid://dkgxcbk6dc8a0" path="res://scenes/maps/FrogShop/FrogShopBackground.mp3" id="4_b43h2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b43h2"]
+radius = 184.02446
 
 [node name="FrogShop" type="Node2D" unique_id=1150295048]
+script = ExtResource("1_a2lv0")
 
 [node name="Player" parent="." unique_id=1194532292 instance=ExtResource("1_7u6h6")]
 unique_name_in_owner = true
@@ -11,3 +18,16 @@ position = Vector2(6, 3)
 
 [node name="Shopkeeper" parent="." unique_id=471522225 instance=ExtResource("2_7u6h6")]
 position = Vector2(253, -10)
+
+[node name="ShopExit" parent="." unique_id=207150871 instance=ExtResource("3_ss6ad")]
+position = Vector2(9, 221)
+InteractName = "(E) Exit Shop"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShopExit" unique_id=1667749052]
+shape = SubResource("CircleShape2D_b43h2")
+
+[node name="FrogShopBackground" type="AudioStreamPlayer" parent="." unique_id=697873626]
+stream = ExtResource("4_b43h2")
+autoplay = true
+bus = &"Music"
+parameters/looping = true

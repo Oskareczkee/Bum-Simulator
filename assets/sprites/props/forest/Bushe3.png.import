@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bktjfldo0ira"
-path="res://.godot/imported/Stump 2.png-71234b5a4920bf432e19f7c2c137aa36.ctex"
+uid="uid://bx5s5g3uyhj0y"
+path="res://.godot/imported/Bushe3.png-7a1e29d1b7ccb129284da627f9f8c153.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/props/Stump 2.png"
-dest_files=["res://.godot/imported/Stump 2.png-71234b5a4920bf432e19f7c2c137aa36.ctex"]
+source_file="res://assets/sprites/props/forest/Bushe3.png"
+dest_files=["res://.godot/imported/Bushe3.png-7a1e29d1b7ccb129284da627f9f8c153.ctex"]
 
 [params]
 

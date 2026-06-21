@@ -1,49 +1,53 @@
 [gd_scene format=4 uid="uid://bv1cd0kwp8b4j"]
 
 [ext_resource type="Script" uid="uid://bt7cas1nsipcy" path="res://scenes/entities/NPCs/Junkman/Junkman.cs" id="1_6t514"]
+[ext_resource type="Texture2D" uid="uid://sotlwo5f0i7r" path="res://scenes/entities/NPCs/Junkman/Junkman_Idle.png" id="2_7tadr"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="3_m7mws"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_53gfc"]
 radius = 16.329796
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gwrpp"]
-load_path = "res://.godot/imported/Junkman_Idle.png-1966317f54245358925b1590943fb68b.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7mws"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_6t514"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mgscn"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_s04lk"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ftl4m"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7mws"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cxw1e"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgscn"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_eqww1"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftl4m"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a5uru"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxw1e"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_px725"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqww1"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(192, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_eulov"]
-atlas = SubResource("CompressedTexture2D_gwrpp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5uru"]
+atlas = ExtResource("2_7tadr")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d01wx"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6t514")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s04lk")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m7mws")
 }, {
@@ -61,16 +65,10 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a5uru")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_px725")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eulov")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qavoi"]

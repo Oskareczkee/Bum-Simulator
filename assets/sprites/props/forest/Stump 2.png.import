@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wij85agn7hf8"
-path="res://.godot/imported/Props.png-4d4c432d1b27f88bc077aee4ae02348c.ctex"
+uid="uid://bktjfldo0ira"
+path="res://.godot/imported/Stump 2.png-d3f19b5a57ae06547cc5729a879ffe24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/props/Props.png"
-dest_files=["res://.godot/imported/Props.png-4d4c432d1b27f88bc077aee4ae02348c.ctex"]
+source_file="res://assets/sprites/props/forest/Stump 2.png"
+dest_files=["res://.godot/imported/Stump 2.png-d3f19b5a57ae06547cc5729a879ffe24.ctex"]
 
 [params]
 

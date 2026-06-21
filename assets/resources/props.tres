@@ -1,33 +1,34 @@
 [gd_resource type="TileSet" format=3 uid="uid://citxk0i1qenn8"]
 
-[ext_resource type="Texture2D" uid="uid://c7pu2i5vdg4u5" path="res://assets/sprites/props/Bushe1.png" id="1_ebflk"]
-[ext_resource type="Texture2D" uid="uid://c46h1kccbb0x5" path="res://assets/sprites/props/Bushe2.png" id="2_wtgvg"]
+[ext_resource type="Texture2D" uid="uid://c7pu2i5vdg4u5" path="res://assets/sprites/props/forest/Bushe1.png" id="1_7acxx"]
+[ext_resource type="Texture2D" uid="uid://c46h1kccbb0x5" path="res://assets/sprites/props/forest/Bushe2.png" id="2_ljs56"]
 [ext_resource type="Texture2D" uid="uid://7hnl06p2c1oj" path="res://assets/sprites/props/automat_idle.png" id="3_aw1sm"]
 [ext_resource type="Texture2D" uid="uid://dq0itvocc1i8s" path="res://assets/sprites/props/automat_used.png" id="4_lk5nf"]
-[ext_resource type="Texture2D" uid="uid://bx5s5g3uyhj0y" path="res://assets/sprites/props/Bushe3.png" id="5_4b5sx"]
 [ext_resource type="Texture2D" uid="uid://clwb4l4w2yajx" path="res://scenes/entities/Props/bench.png" id="5_aw1sm"]
 [ext_resource type="Texture2D" uid="uid://dbgn3p3bsea3a" path="res://assets/sprites/props/buildings/frog_shop1.png" id="5_wtgvg"]
-[ext_resource type="Texture2D" uid="uid://wij85agn7hf8" path="res://assets/sprites/props/Props.png" id="6_q6dfm"]
 [ext_resource type="Texture2D" uid="uid://7s07lbdy2hvo" path="res://scenes/entities/Props/benches.png" id="7_4b5sx"]
-[ext_resource type="Texture2D" uid="uid://bktjfldo0ira" path="res://assets/sprites/props/Stump 2.png" id="7_4dhws"]
 [ext_resource type="Texture2D" uid="uid://b0ldebk0ru8qk" path="res://scenes/entities/Props/trains.png" id="8_q6dfm"]
-[ext_resource type="Texture2D" uid="uid://b0gy461uly6ob" path="res://assets/sprites/props/Tree2.png" id="8_sk5jy"]
 [ext_resource type="Texture2D" uid="uid://dni1bn7pvrv38" path="res://scenes/entities/Props/trains_new.png" id="9_q6dfm"]
-[ext_resource type="Texture2D" uid="uid://dc161dwlhqidp" path="res://assets/sprites/props/Tree3.png" id="9_reqiw"]
 [ext_resource type="Texture2D" uid="uid://rk8k7g0lhmrc" path="res://scenes/entities/Props/roof.png" id="10_4dhws"]
 [ext_resource type="Texture2D" uid="uid://c2yo867p4kl3" path="res://assets/sprites/props/scrapyard/cars.png" id="10_yfjmj"]
 [ext_resource type="Texture2D" uid="uid://pjtorlamrsl5" path="res://assets/sprites/props/beach/flip_flops.png" id="11_7acxx"]
 [ext_resource type="Texture2D" uid="uid://bofe2isqv1mt1" path="res://assets/sprites/props/scrapyard/tires1.png" id="11_wv10g"]
 [ext_resource type="Texture2D" uid="uid://bff5dw2gugqvf" path="res://assets/sprites/props/scrapyard/tires2.png" id="12_4jxjs"]
 [ext_resource type="Texture2D" uid="uid://b2to3nhtn8f8y" path="res://assets/sprites/props/beach/shells.png" id="12_ljs56"]
+[ext_resource type="Texture2D" uid="uid://bx5s5g3uyhj0y" path="res://assets/sprites/props/forest/Bushe3.png" id="13_83fsm"]
 [ext_resource type="Texture2D" uid="uid://v5i6wao1ty6n" path="res://assets/sprites/props/beach/stones.png" id="14_83fsm"]
 [ext_resource type="Texture2D" uid="uid://doawgounj28ia" path="res://assets/sprites/props/beach/swim_rings.png" id="15_o4gmn"]
 [ext_resource type="Texture2D" uid="uid://crcp02sm71gj2" path="res://assets/sprites/props/beach/toys.png" id="16_4jp22"]
 [ext_resource type="Texture2D" uid="uid://cdeobsfbbgi08" path="res://assets/sprites/props/beach/volleyball_net.png" id="17_eeppc"]
+[ext_resource type="Texture2D" uid="uid://wij85agn7hf8" path="res://assets/sprites/props/forest/Props.png" id="18_o4gmn"]
+[ext_resource type="Texture2D" uid="uid://bktjfldo0ira" path="res://assets/sprites/props/forest/Stump 2.png" id="19_4jp22"]
+[ext_resource type="Texture2D" uid="uid://b0gy461uly6ob" path="res://assets/sprites/props/forest/Tree2.png" id="20_eeppc"]
+[ext_resource type="Texture2D" uid="uid://dc161dwlhqidp" path="res://assets/sprites/props/forest/Tree3.png" id="21_yd6f7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wx38t"]
-texture = ExtResource("1_ebflk")
+texture = ExtResource("1_7acxx")
 texture_region_size = Vector2i(128, 128)
+0:0/animation_speed = 6.0
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -39,8 +40,9 @@ texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjepx"]
-texture = ExtResource("2_wtgvg")
+texture = ExtResource("2_ljs56")
 texture_region_size = Vector2i(128, 128)
+0:0/animation_speed = 6.0
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -149,7 +151,7 @@ texture_region_size = Vector2i(44, 40)
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwdnn"]
-texture = ExtResource("5_4b5sx")
+texture = ExtResource("13_83fsm")
 texture_region_size = Vector2i(128, 128)
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
@@ -195,7 +197,7 @@ texture_region_size = Vector2i(144, 75)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, 16, 64, 16, 64, 26.666668, -64, 26.666668)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7trey"]
-texture = ExtResource("6_q6dfm")
+texture = ExtResource("18_o4gmn")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 16, 16, -16, 16)
@@ -213,14 +215,15 @@ texture_region_size = Vector2i(64, 64)
 8:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ycfk"]
-texture = ExtResource("7_4dhws")
+texture = ExtResource("19_4jp22")
 texture_region_size = Vector2i(64, 64)
 1:3/0 = 0
 1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 16, 16, -16, 16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22g2n"]
-texture = ExtResource("8_sk5jy")
+texture = ExtResource("20_eeppc")
 texture_region_size = Vector2i(192, 256)
+0:0/animation_speed = 6.0
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -234,8 +237,9 @@ texture_region_size = Vector2i(192, 256)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 16, 16, -16, 16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u06j6"]
-texture = ExtResource("9_reqiw")
+texture = ExtResource("21_yd6f7")
 texture_region_size = Vector2i(192, 192)
+0:0/animation_speed = 6.0
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0

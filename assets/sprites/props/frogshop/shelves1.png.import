@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx5s5g3uyhj0y"
-path="res://.godot/imported/Bushe3.png-ef74f130fa23c0450bddc9e7cc462cff.ctex"
+uid="uid://dokctkf24ioey"
+path="res://.godot/imported/shelves1.png-beab324271f79c677ab86a830bc04885.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/props/Bushe3.png"
-dest_files=["res://.godot/imported/Bushe3.png-ef74f130fa23c0450bddc9e7cc462cff.ctex"]
+source_file="res://assets/sprites/props/frogshop/shelves1.png"
+dest_files=["res://.godot/imported/shelves1.png-beab324271f79c677ab86a830bc04885.ctex"]
 
 [params]
 

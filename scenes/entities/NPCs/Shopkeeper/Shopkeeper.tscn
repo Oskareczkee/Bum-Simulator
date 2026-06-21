@@ -1,75 +1,138 @@
 [gd_scene format=3 uid="uid://5eefaoibcpam"]
 
-[ext_resource type="Texture2D" uid="uid://daank31l7ibpe" path="res://scenes/entities/NPCs/TestNPC/Warrior_Idle.png" id="1_h35v5"]
 [ext_resource type="Script" uid="uid://byuoj8ctr6fcl" path="res://scenes/entities/NPCs/Shopkeeper/Shopkeeper.cs" id="1_u3drq"]
+[ext_resource type="Texture2D" uid="uid://25dpr8ice15q" path="res://scenes/entities/NPCs/Shopkeeper/Shopkeeper_Idle.png" id="2_87obm"]
 [ext_resource type="PackedScene" uid="uid://8plnrliuaebq" path="res://interaction_components/interactable.tscn" id="2_u3drq"]
 [ext_resource type="AudioStream" uid="uid://5mk51b3v57xk" path="res://scenes/entities/NPCs/Shopkeeper/ShopkeeperDialogue.mp3" id="4_u3drq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iq4rx"]
 radius = 53.600372
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rmcgl"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(0, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_iq4rx"]
+atlas = ExtResource("2_87obm")
+region = Rect2(0, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_igu3x"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(192, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgpad"]
+atlas = ExtResource("2_87obm")
+region = Rect2(84, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6u8c8"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(384, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfj4w"]
+atlas = ExtResource("2_87obm")
+region = Rect2(168, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t10ic"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(576, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1ol3"]
+atlas = ExtResource("2_87obm")
+region = Rect2(252, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ih0km"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(768, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qt4di"]
+atlas = ExtResource("2_87obm")
+region = Rect2(336, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_74ksa"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(960, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_pd5sx"]
+atlas = ExtResource("2_87obm")
+region = Rect2(420, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_aqlas"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(1152, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_frfn7"]
+atlas = ExtResource("2_87obm")
+region = Rect2(504, 0, 84, 156)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_la45j"]
-atlas = ExtResource("1_h35v5")
-region = Rect2(1344, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_noxeq"]
+atlas = ExtResource("2_87obm")
+region = Rect2(588, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juikd"]
+atlas = ExtResource("2_87obm")
+region = Rect2(672, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4k5ib"]
+atlas = ExtResource("2_87obm")
+region = Rect2(840, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8ioy"]
+atlas = ExtResource("2_87obm")
+region = Rect2(924, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd7vi"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1008, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4cvg"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1092, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ft1nw"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1176, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1q545"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1260, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88qmv"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1344, 0, 84, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwj6y"]
+atlas = ExtResource("2_87obm")
+region = Rect2(1428, 0, 84, 156)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dgpad"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rmcgl")
+"texture": SubResource("AtlasTexture_iq4rx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_igu3x")
+"texture": SubResource("AtlasTexture_dgpad")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6u8c8")
+"texture": SubResource("AtlasTexture_dfj4w")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t10ic")
+"texture": SubResource("AtlasTexture_b1ol3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ih0km")
+"texture": SubResource("AtlasTexture_qt4di")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_74ksa")
+"texture": SubResource("AtlasTexture_pd5sx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_aqlas")
+"texture": SubResource("AtlasTexture_frfn7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_la45j")
+"texture": SubResource("AtlasTexture_noxeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_juikd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4k5ib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8ioy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd7vi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4cvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ft1nw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1q545")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88qmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwj6y")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 6.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dfj4w"]
@@ -82,9 +145,12 @@ script = ExtResource("1_u3drq")
 shape = SubResource("CircleShape2D_iq4rx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=989452590]
+position = Vector2(2, -5)
+scale = Vector2(0.63095236, 0.63095236)
 sprite_frames = SubResource("SpriteFrames_dgpad")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.6181968
 
 [node name="Interactable" parent="." unique_id=207150871 instance=ExtResource("2_u3drq")]
 InteractName = "(E) Buy Beer (5 Gold)"

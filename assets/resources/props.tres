@@ -29,6 +29,7 @@
 texture = ExtResource("1_7acxx")
 texture_region_size = Vector2i(128, 128)
 0:0/animation_speed = 6.0
+0:0/animation_mode = 1
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -43,6 +44,7 @@ texture_region_size = Vector2i(128, 128)
 texture = ExtResource("2_ljs56")
 texture_region_size = Vector2i(128, 128)
 0:0/animation_speed = 6.0
+0:0/animation_mode = 1
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0
@@ -135,6 +137,10 @@ texture = ExtResource("10_4dhws")
 texture_region_size = Vector2i(1500, 696)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, 330)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-304, -26.666668, -197.33334, -26.666668, -197.33334, 16, -304, 16)
+0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(202.66667, -26.666668, 309.33334, -26.666668, 309.33334, 16, 202.66667, 16)
+0:0/0/physics_layer_0/polygon_2/points = PackedVector2Array(-736, -26.666668, -682.6667, -26.666668, -682.6667, 10.666668, -741.3334, 10.666668)
+0:0/0/physics_layer_0/polygon_3/points = PackedVector2Array(672, -26.666668, 730.6667, -26.666668, 730.6667, 10.666668, 672, 10.666668)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yd6f7"]
 texture = ExtResource("11_7acxx")
@@ -224,6 +230,7 @@ texture_region_size = Vector2i(64, 64)
 texture = ExtResource("20_eeppc")
 texture_region_size = Vector2i(192, 256)
 0:0/animation_speed = 6.0
+0:0/animation_mode = 1
 0:0/animation_frame_0/duration = 1.0
 0:0/animation_frame_1/duration = 1.0
 0:0/animation_frame_2/duration = 1.0

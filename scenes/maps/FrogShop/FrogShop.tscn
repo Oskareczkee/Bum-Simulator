@@ -121,6 +121,7 @@ texture_region_size = Vector2i(287, 120)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-141.33334, -5.333333, 141.33334, -5.333333, 141.33334, 40, -141.33334, 40)
 0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, 50)
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-141.33334, 24, 61.333336, 24, 61.333336, 58.66667, -141.33334, 56)
 
 [sub_resource type="TileSet" id="TileSet_pkfjw"]
